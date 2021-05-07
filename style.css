@@ -15,17 +15,37 @@ body {
   display: flex;
 }
 
+.img-joker {
+  max-width: 50%;
+  filter: invert(100%);
+}
+
 h1 {
   text-align: center;
 }
 
 .menu {
   display: flex;
-  flex-direction: column;
+}
+
+.sloupec__jedna {
+  flex-direction: row;
+}
+
+.sloupec__dva {
+  flex-direction: row;
 }
 
 button {
   font-family: 'Bangers', cursive;
   border-radius: 50%;
   padding: 1rem;
+}
+
+/* --- css pro index-kontakt.html --- */
+.adresa {
+  text-align: center;
+}
+#mapa {
+  max-width: 80%;
 }
