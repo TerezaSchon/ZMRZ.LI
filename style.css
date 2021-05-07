@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+/* font-family: 'Bangers', cursive; */
+
+body {
+  color: #ffffff;
+  background-color: #000000;
+  font-family: 'Bangers', cursive;
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-family: 'Bangers', cursive;
+  border-radius: 50%;
+  padding: 1rem;
+}
