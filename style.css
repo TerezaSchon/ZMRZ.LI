@@ -27,10 +27,6 @@ body {
   align-items: center;
 }
 
-.container {
-  align-items: center;
-}
-
 h1 {
   letter-spacing: 0.2rem;
   color: #ddd;
@@ -89,10 +85,10 @@ nav a {
   text-transform: uppercase;
 }
 nav a:focus {
-  color: yellowgreen;
+  color: rgb(50, 202, 205);
 }
 nav a:hover {
-  color: yellowgreen;
+  color: rgb(50, 202, 205);
   border-bottom: 1px solid #ddd;
 }
 
@@ -114,6 +110,20 @@ nav a:hover {
 
 #nav__btn:focus {
   outline: none;
+}
+
+/* -----kontakt----- */
+
+.container4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mapa {
+  border: solid 2px rgb(50, 202, 205);
+  max-width: 50%;
+  background-color: white;
 }
 
 @media screen and (min-width: 768px) {
