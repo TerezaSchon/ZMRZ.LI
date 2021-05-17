@@ -24,6 +24,8 @@ body {
   font-family: 'Bangers', cursive;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
   align-items: center;
 }
 
@@ -32,6 +34,8 @@ h1 {
   color: #ddd;
 }
 
+img {
+}
 #img-logo-joker {
   align-items: center;
   width: 50%;
@@ -84,9 +88,7 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
 }
-nav a:focus {
-  color: rgb(50, 202, 205);
-}
+
 nav a:hover {
   color: rgb(50, 202, 205);
   border-bottom: 1px solid #ddd;
