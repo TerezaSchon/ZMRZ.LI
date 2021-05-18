@@ -1,13 +1,25 @@
 .header {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
+  align-content: space-around;
+  justify-content: space-between;
+
+  min-width: 320px;
+  max-width: 768px;
+}
+
+h1 {
+  width: 50%;
+  align-content: center;
+  padding: 0;
 }
 
 #menu__btn {
   background-image: url('../img_podklady/menu.png');
-  width: 3rem;
-  height: 3rem;
-  padding: 0;
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
+  margin: 1rem;
   border: none;
   background-color: transparent;
   background-size: contain;
@@ -30,6 +42,10 @@ ul a {
   text-transform: uppercase;
 }
 
-.menu-closed {
+ul a:hover {
+  color: aqua;
+}
+
+ul .menu-closed {
   display: none;
 }
