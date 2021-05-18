@@ -1,18 +1,16 @@
 html {
-    box-sizing: border-box;
-  }
-  *,
-  ::after,
-  ::before {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
-    /*   body {
-    font-family:  
-    background-color:
-    width:
-
-
-    
-    */
-
+body {
+  /*   font-family:  
+    background-color: */
+  display: flex;
+  min-width: 320px;
+  max-width: 768px;
+}
