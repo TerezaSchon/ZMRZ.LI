@@ -1,4 +1,4 @@
-/* font-family: 'Bangers', cursive; */
+/* font-family: 'Bangers', cursive; 
 html {
   box-sizing: border-box;
 }
@@ -7,7 +7,7 @@ html {
 ::before {
   box-sizing: inherit;
 }
-/* font-family: 'Bangers', cursive; */
+font-family: 'Bangers', cursive; 
 
 body {
   color: #ddd;
@@ -40,7 +40,7 @@ h1 {
   width: 50%;
   border-radius: 50%;
   border: 5px, solid, black;
-  /* filter: invert(100%); */
+  /* filter: invert(100%); 
 }
 
 h2 {
@@ -117,7 +117,7 @@ nav a:hover {
   outline: none;
 }
 
-/* -----kontakt----- */
+/* -----kontakt----- 
 
 .container4 {
   display: flex;
@@ -143,11 +143,11 @@ nav a:hover {
     justify-content: center;
   }
 
-  /* .banner {
+  .banner {
     height: 600px;
 
     background-position: top left;
-  }  */
+  }  
 
   .navigation {
     flex-direction: row;
@@ -169,8 +169,8 @@ nav a:hover {
   .nav-closed {
     display: block;
   }
-
-  /* .intro {
+ */
+/* .intro {
     width: 30%;
 
     margin-left: 65%;
@@ -178,7 +178,6 @@ nav a:hover {
 
     text-align: center;
   } */
-}
 
 /* 
 body {
