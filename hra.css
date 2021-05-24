@@ -1,6 +1,6 @@
 /* DEFAULTS */
 /* =============================================== */
-body {
+/* body {
   display: grid; 
   place-content: center;
   margin: 0;
@@ -8,14 +8,14 @@ body {
   box-sizing: border-box;
   background-color: #252729;
   font-family: font-family: 'Bangers', cursive;
-}
+} */
 
 /* MAIN */
 /* =============================================== */
-.title-coJeNaCepu{
+.title-coJeNaCepu {
   text-align: center;
 }
-section .container3{
+.container3 {
   min-width: 90%;
   margin: 0.6rem;
   padding: 0rem;
@@ -26,8 +26,7 @@ h2 {
   color: rgb(211, 211, 206);
   padding: 1rem;
 }
-.game{
-  min-width: 90%;
+.game {
   border-radius: 0.5rem;
   background: hsla(0, 0%, 80%, 0.14);
   padding: 0.6rem;
@@ -55,7 +54,7 @@ h2 {
   width: 0.06rem;
   height: 0.06rem;
   opacity: 0;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .check-design {
@@ -64,8 +63,8 @@ h2 {
   border-radius: 50%;
   background: linear-gradient(
     to right bottom,
-    hsl(34, 74%, 74%),
-    hsl(24, 40%, 41%)
+    hsl(0, 91%, 55%),
+    hsl(0, 60%, 35%)
   );
   position: relative;
 }
@@ -82,8 +81,8 @@ h2 {
 }
 
 .check-input:checked + .check-design::before {
-/*   transform: scale(0);
- */}
+  transform: scale(0);
+}
 
 .check-text {
   color: hsl(0, 0%, 90%);
@@ -91,70 +90,80 @@ h2 {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   font-size: 1.1rem;
-  font-weight: 900; 
+  font-weight: 900;
   transition: 0.3s;
-/*   overflow-wrap: anywhere; */
+  /*  overflow-wrap: anywhere; */
 }
 
 .check-input:checked ~ .check-text {
   color: hsl(0, 0%, 90%);
 }
 
-.arrowed{
+.arrowed {
   display: flex;
   justify-content: space-between;
+  border-radius: 6.25rem;
+  padding: 0.8rem 1rem;
+  margin: 0.6rem 0.6rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.arrowed:hover,
+.arrowed:focus-within {
+  background: hsla(0, 0%, 80%, 0.14);
+}
+
+.btn-design:hover {
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right bottom,
+    hsl(0, 91%, 55%),
+    hsl(0, 60%, 35%)
+  );
+  transition: 0.3s;
+}
+.btn-design {
+  padding: 0.3rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  border: none;
+  border-radius: inherit;
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-design :focus-within {
+  background: hsla(0, 0%, 80%, 0.14);
+}
+
+img {
+  width: 100%;
+}
+#btn-confirm {
+  display: none;
+  min-width: fit-content;
+  padding: 0.3rem;
+}
+#btn-confirm:hover {
+  border-radius: inherit;
+}
+
+.logo {
+  align-content: center;
+  width: 5rem;
+  width: 5rem;
+}
+
+.game-final {
   margin: 1rem;
-
+  border-radius: 0.5rem;
+  background: hsla(0, 0%, 80%, 0.14);
+  border-radius: 6.25rem;
+  padding: 0.6rem;
 }
 
-.arrow-4 {
-	/* duplicate the triange */
-	position: relative;
-	height: 0px; width: 0px;
-	border: 8px solid;
-	border-color: 
-		darkorange
-		darkorange
-		transparent
-		transparent;
-	transform: rotate(45deg); 
-}
-#arrow-4 {
-  transform: rotate(225deg); 
-}
-
-.arrow-4:before, .arrow-4:after {
-	content: '';
-	display: block;
-	position: absolute;
-	
-	/* set up more triangles */
-	height: 0; width: 0;
-	
-	/* half the parent border
-	   rounded up */
-	border: 5px solid;	
-}
-
-.arrow-4:before {
-	border-color:
-		darkorange
-		transparent
-transparent
-		darkorange; 
-	display: block;
-	top: -1px; right: 0px;
-	transform-origin: top right;
-	transform: rotate(45deg); 
-}
-
-.arrow-4:after {
-	border-color:
-		transparent
-		darkorange
-		darkorange
-		transparent;
-	top: 0px; right: -1px;
-	transform-origin: top right;
-	transform: rotate(-45deg);
+.game-text {
 }
