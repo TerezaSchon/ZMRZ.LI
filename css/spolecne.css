@@ -7,10 +7,10 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  /*   font-family:  
+/* body { */
+/*   font-family:  
     background-color: */
-  display: flex;
+/*   display: flex;
   min-width: 320px;
   max-width: 768px;
   font-family: Montserrat;
@@ -18,4 +18,14 @@ body {
   background-color: #1c1b1b;
   color: white;
   width: 100vw;
+} */
+
+body {
+  display: grid;
+  place-content: center;
+  margin: 0;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  background-color: #252729;
+  font-family: 'Bangers', cursive;
 }

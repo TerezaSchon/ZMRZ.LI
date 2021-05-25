@@ -47,6 +47,6 @@ ul a:hover {
   color: aqua;
 }
 
-ul .menu-closed {
+.menu-closed {
   display: none;
 }
