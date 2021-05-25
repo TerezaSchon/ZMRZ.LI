@@ -7,8 +7,9 @@ html {
   box-sizing: inherit;
 }
 
-.kontakt {
+#kontakt {
   row-gap: 1rem;
+  text-align: center;
 }
 
 #ikona-mapa,
