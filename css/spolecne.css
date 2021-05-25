@@ -27,5 +27,8 @@ body {
   padding: 2.5rem;
   box-sizing: border-box;
   background-color: #252729;
-  font-family: 'Bangers', cursive;
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 1rem;
+  letter-spacing: 1px;
 }
