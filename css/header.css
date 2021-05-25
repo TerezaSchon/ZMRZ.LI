@@ -4,9 +4,10 @@
   align-content: space-around;
   justify-content: space-between;
   margin: 2rem 1rem 1rem 1rem;
-  padding: Orem;
+
   min-width: 320px;
   max-width: 768px;
+  position: relative;
 }
 
 h1 {
@@ -15,6 +16,9 @@ h1 {
 }
 
 #menu__btn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
   background-image: url('../img_podklady/menu.png');
   width: 4rem;
   height: 4rem;
