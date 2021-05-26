@@ -1,7 +1,9 @@
 .sipky-pozadi {
   height: 3rem;
   background-image: url('../img_podklady/sipkaTopRed.svg');
-  background-repeat: repeat;
+  background-repeat: repeat-x;
+  padding: 0;
+  margin: 0;
 }
 
 .header-hlavni {
