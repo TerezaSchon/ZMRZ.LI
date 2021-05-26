@@ -1,0 +1,23 @@
+#uvod {
+  display: block;
+  flex-direction: column;
+  align-content: center;
+}
+
+#logo-uvod {
+  width: 80%;
+}
+
+h2 {
+  margin: 0;
+}
+
+#btn-na-cepu {
+  background-color: red;
+  color: white;
+  border: solid #252729 1px;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 2rem;
+}
