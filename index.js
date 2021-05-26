@@ -1,22 +1,34 @@
-const btnEl = document.querySelector('.js-btn-forward');
+const btnForwardEl = document.querySelector('.js-btn-forward');
+const btnBackEl = document.querySelector('.js-btn-back');
 
-btnEl.addEventListener('click', () => {
-  const currentQ =  zde zavolas getCurrentQuestion
-  changeQuestion(currentQ);
+btnForwardEl.addEventListener('click', () => {
+  const currentQ = getCurrentQuestion();
+  changeQuestion(currentQ, currentQ + 1);
+});
+
+btnBackEl.addEventListener('click', () => {
+  const currentQ = getCurrentQuestion();
+  changeQuestion(currentQ, currentQ - 1);
 });
 
 function getCurrentQuestion() {
-  vrat ( zjisti _element_.dataset.currentQ )  
+  const gameEl = document.getElementById('game');
+  return Number(gameEl.dataset.currentQ);
 }
 
-function setCurrentQuestion(___) {
-   zjisti _element_ a do jeho vlastnosti dataset.currentQ  nastav ___
+function setCurrentQuestion(question) {
+  const gameEl = document.getElementById('game');
+  gameEl.dataset.currentQ = question;
 }
 
+function setQestionIndicator(num) {
+  const indicatorEl = document.querySelector('.js-q-indicator');
+  indicatorEl.textContent = `${num}/6`;
+}
 
-function changeQuestion(num) {
+function changeQuestion(from, to) {
   const inputEls = Array.from(
-    document.querySelectorAll(`.js-game-q${num} input`),
+    document.querySelectorAll(`.js-game-q${from} input`),
   );
   const chekedItems = inputEls.filter((item) => {
     if (item.checked === true) {
@@ -25,11 +37,11 @@ function changeQuestion(num) {
   });
 
   if (chekedItems.length > 0) {
-    document.querySelector(`.js-game-q${num}`).classList.add('hide');
-    document.querySelector(`.js-game-q${num + 1}`).classList.remove('hide');
+    document.querySelector(`.js-game-q${from}`).classList.add('hide');
+    document.querySelector(`.js-game-q${to}`).classList.remove('hide');
+    setCurrentQuestion(to);
+    setQestionIndicator(to);
   } else {
     alert('zaškrtni položku');
   }
-
-  nastavis setCurrentQuestion na num + 1
 }
