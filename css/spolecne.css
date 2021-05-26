@@ -34,3 +34,9 @@ body {
   min-width: 320px;
   max-width: 768px;
 }
+
+.page {
+  min-height: 568px;
+  max-height: 1024px;
+  padding: 1rem;
+}
