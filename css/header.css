@@ -1,31 +1,58 @@
-.header {
+.sipky-pozadi {
+  height: 3rem;
+  background-image: url('../img_podklady/sipkaTopRed.svg');
+  background-repeat: repeat;
+}
+
+.header-hlavni {
   display: inline-flex;
   flex-direction: row;
-  align-content: space-around;
-  justify-content: space-between;
-  margin: 2rem 1rem 1rem 1rem;
 
+  justify-content: space-between;
+  margin: 0;
+  padding: 1rem 0 0 0;
   min-width: 320px;
   max-width: 768px;
   position: relative;
+
+  align-content: stretch;
 }
 
+/* #menu__item--1,
+#menu__item--2,
+#menu__item--3,
+#menu__item--4 {
+  position: relative;
+  display: inline-block;
+
+  clear: both;
+  color: transparent;
+  font-size: 14px;
+  letter-spacing: -6.2px;
+  height: 7px;
+  line-height: 7px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transform: scaleY(0.2);
+  transition: opacity 1s;
+} */
+
 h1 {
-  width: 75%;
-  margin: 2rem 1rem 1rem 1rem;
+  width: 85%;
+  margin: 1rem 1rem 1rem 1rem;
 }
 
 #menu__btn {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  bottom: 0;
+  right: 0;
   background-image: url('../img_podklady/menu.png');
   width: 4rem;
   height: 4rem;
-  padding: 1rem;
-  margin: 2rem 1rem;
+  padding: 0rem;
 
-  border: none;
+  border: solid red;
+  border-radius: 50%;
   background-color: transparent;
   background-size: contain;
   cursor: pointer;
