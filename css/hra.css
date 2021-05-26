@@ -12,6 +12,20 @@
 
 /* MAIN */
 /* =============================================== */
+/* DEFAULTS */
+/* =============================================== */
+/* body {
+  display: grid; 
+  place-content: center;
+  margin: 0;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  background-color: #252729;
+  font-family: font-family: 'Bangers', cursive;
+} */
+
+/* MAIN */
+/* =============================================== */
 .title-coJeNaCepu {
   text-align: center;
 }
@@ -34,16 +48,18 @@ h3 {
 h6 {
   text-align: center;
 }
-.game-q1,
-.game-q2,
-.game-q3,
-.game-q4,
-.game-q5,
-.game-f {
+.game {
   border-radius: 0.5rem;
   background: hsla(0, 0%, 80%, 0.14);
   padding: 0.6rem;
   margin: 0rem;
+}
+.game-f {
+  margin: 1rem;
+  border-radius: 0.5rem;
+  background: hsla(0, 0%, 80%, 0.14);
+  border-radius: 6.25rem;
+  padding: 0.6rem;
 }
 .radio-label {
   display: flex;
@@ -161,17 +177,6 @@ img {
   align-content: center;
   width: 5rem;
   width: 5rem;
-}
-
-.game-final {
-  margin: 1rem;
-  border-radius: 0.5rem;
-  background: hsla(0, 0%, 80%, 0.14);
-  border-radius: 6.25rem;
-  padding: 0.6rem;
-}
-
-.game-text {
 }
 
 .hide {

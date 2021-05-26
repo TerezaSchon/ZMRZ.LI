@@ -1,168 +1,35 @@
+const btnEl = document.querySelector('.js-btn-forward');
+
+btnEl.addEventListener('click', () => {
+  const currentQ =  zde zavolas getCurrentQuestion
+  changeQuestion(currentQ);
+});
+
+function getCurrentQuestion() {
+  vrat ( zjisti _element_.dataset.currentQ )  
+}
+
+function setCurrentQuestion(___) {
+   zjisti _element_ a do jeho vlastnosti dataset.currentQ  nastav ___
+}
 
 
-const zmrzliny = [
-  {
-    name: "vanilka - rum",
-    color: "#fff200",
-  },
-  {
-    name: "slaný karamel",
-    color: "#ee7b22",
-  },
-  {
-    name: "bezinka",
-    color: "#dfc07d",
-  },
-  {
-    name: "tmavá čokoláda - uzená sůl",
-    color: "#3c2415",
-  },
-  {
-    name: "mléčný čokoládový shake",
-    color: "#754c29",
-  },
-  {
-    name: "banán - arašído slaninová směs",
-    color: "#f7941d",
-  },
-  {
-    name: "bourbor - sušenky s kukuřičných lupínků",
-    color: "#2b3990",
-  },
-  {
-    name: "káva arabica",
-    color: "#8b5e3c",
-  },
-  {
-    name: "oolong čaj",
-    color: "#71732f",
-  },
-  {
-    name: "masala čaj",
-    color: "#e12b27",
-  },
-  {
-    name: "černé pivo",
-    color: "#231f20",
-  },
-  {
-    name: "med - grahamové sušenky",
-    color: "#f79441",
-  },
-  {
-    name: "zázvor v řeckém jogurtu",
-    color: "#469172",
-  },
-  {
-    name: "bílá čokoláda s mákem",
-    color: "#c2b59b",
-  },
-  {
-    name: "pražená bílá čokoláda - levandule",
-    color: "#7f3f98",
-  },
-  {
-    name: "borůvky v řeckém jogurtu - levandule",
-    color: "#4c2d85",
-  },
-  {
-    name: "meruňka - červený rooibos",
-    color: "#f26522",
-  },
-  {
-    name: "broskev - černý čaj",
-    color: "#f26522",
-  },
-  {
-    name: "ananas - zelený čaj s jasmínem",
-    color: "#cbd63f",
-  },
-  {
-    name: "máta & pepř - kousky čokolády",
-    color: "#00a79d",
-  },
-  {
-    name: "šípek",
-    color: "#a32823",
-  },
-  {
-    name: "smetanový sýr - ostružinový výr",
-    color: "#d8b898",
-  },
-  {
-      name: "donut",
-      color: "#dfc07d",
-    },
-  {
-    name: "leche merengada - citronová tříšť",
-    color: "#1b75bc",
-  },
-  {
-    name: "pomerančový sorbet - šafrán",
-    color: "#f15a29",
-  },
-  {
-    name: "hrušky & rýnský ryzlink sorbet - zázvor",
-    color: "#8dc63f",
-  },
-  {
-    name: "merlot & cola sorbet",
-    color: "#601d25",
-  },
-  {
-    name: "kokos & limetka sorbet - chilli",
-    color: "#00a14b",
-  },
-  {
-    name: "citron sorbet - bazalka",
-    color: "#51b748",
-  },
-  {
-    name: "maliny - šampaňské sorbet",
-    color: "#eb284c",
-  },
-]
+function changeQuestion(num) {
+  const inputEls = Array.from(
+    document.querySelectorAll(`.js-game-q${num} input`),
+  );
+  const chekedItems = inputEls.filter((item) => {
+    if (item.checked === true) {
+      return item;
+    }
+  });
 
-const gameAnswers = {
-      q1: {
-        Adidas: [ "vanilka", "", "" ],
-        Converse: [ "", "", "" ],
-        Botas: [ "", "", "" ]
-        Barefoot: [ "", "", "" ]
-        Vans: [ "", "", "" ]
+  if (chekedItems.length > 0) {
+    document.querySelector(`.js-game-q${num}`).classList.add('hide');
+    document.querySelector(`.js-game-q${num + 1}`).classList.remove('hide');
+  } else {
+    alert('zaškrtni položku');
+  }
 
-      q2: 
-        lila: [ "vanilka", "", "" ],
-        slonovinová: [ "", "", "" ],
-        petrolejová: [ "", "", "" ]
-        starorůžová: [ "", "", "" ]
-        khaki: [ "", "", "" ]
-      
-      q4: 
-      Indie: [ "vanilka", "", "" ],
-      Francie: [ "", "", "" ],
-      Velká Británie: [ "", "", "" ]
-      Chile / Thajsko: [ "", "", "" ]
-      Kuba: [ "", "", "" ]
-
-      q5:
-      chilli: [ "vanilka", "", "" ],
-      pepř: [ "", "", "" ],
-      sůl: [ "", "", "" ]
-      kardamom: [ "", "", "" ]
-      levandule: [ "", "", "" ]
-
-      q6:
-      Monty Pythonův létající cirkus: [ "vanilka", "", "" ],
-      Friends: [ "", "", "" ],
-      Hra o trůny: [ "", "", "" ]
-      Teorie velkého třesku: [ "", "", "" ]
-      Nemocnice na kraji města: [ "", "", "" ]
-
-      qf:
-      Adidas: [ "vanilka", "", "" ],
-      Converse: [ "", "", "" ],
-      Botas: [ "", "", "" ]
-      Barefoot: [ "", "", "" ]
-      Vans: [ "", "", "" ]
-      }
+  nastavis setCurrentQuestion na num + 1
+}
