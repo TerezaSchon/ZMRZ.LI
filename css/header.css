@@ -12,6 +12,10 @@
   left: 0;
 }
 
+.tecka {
+  color: red;
+}
+
 .header-hlavni {
   display: flex;
 
