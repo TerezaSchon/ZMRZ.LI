@@ -1,23 +1,28 @@
 .sipky-pozadi {
+  display: block;
   height: 3rem;
+  width: 100%;
+
   background-image: url('../img_podklady/sipkaTopRed.svg');
   background-repeat: repeat-x;
-  padding: 0;
-  margin: 0;
+  background-size: auto 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .header-hlavni {
-  display: inline-flex;
-  flex-direction: row;
+  display: flex;
 
   justify-content: space-between;
-  margin: 0;
-  padding: 1rem 0 0 0;
+  margin: 0 auto;
+  padding-top: 3.1rem;
   min-width: 320px;
   max-width: 768px;
   position: relative;
 
-  align-content: stretch;
+  align-items: center;
 }
 
 /* #menu__item--1,
@@ -41,18 +46,16 @@
 
 h1 {
   width: 85%;
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 0;
+  margin-left: 1rem;
 }
 
-#menu__btn {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.menu__btn {
   background-image: url('../img_podklady/menu.png');
   width: 4rem;
   height: 4rem;
   padding: 0rem;
-
+  margin-right: 1rem;
   border: solid red;
   border-radius: 50%;
   background-color: transparent;
