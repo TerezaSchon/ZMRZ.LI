@@ -21,22 +21,15 @@ html {
 } */
 
 body {
-  display: grid;
-  place-content: center;
-  margin: 0;
-  padding: 2.5rem;
+  /* display: grid;
+  place-content: center; */
+
   box-sizing: border-box;
   background-color: #252729;
   color: white;
   font-family: 'Montserrat';
   font-size: 1rem;
   letter-spacing: 1px;
-  min-width: 320px;
-  max-width: 768px;
-}
-
-.page {
-  min-height: 568px;
-  max-height: 1024px;
-  padding: 1rem;
+  /*  min-width: 320px;
+  max-width: 768px; */
 }
