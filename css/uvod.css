@@ -1,12 +1,14 @@
-#uvod {
-  display: block;
+.uvod {
+  display: flex;
   flex-direction: column;
   align-content: center;
+  align-items: center;
   min-width: 320px;
   max-width: 768px;
+  margin: 0 auto;
 }
 
-#logo-uvod {
+.logo-uvod {
   width: 80%;
 }
 
@@ -14,7 +16,7 @@ h2 {
   margin: 0;
 }
 
-#btn-na-cepu {
+.btn-na-cepu {
   background-color: red;
   color: white;
   border: solid #252729 1px;
