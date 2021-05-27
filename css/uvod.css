@@ -2,6 +2,8 @@
   display: block;
   flex-direction: column;
   align-content: center;
+  min-width: 320px;
+  max-width: 768px;
 }
 
 #logo-uvod {
