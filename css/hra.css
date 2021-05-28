@@ -45,12 +45,7 @@ h6 {
 }
 
 .radio-input {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 0.06rem;
-  height: 0.06rem;
-  opacity: 0;
+  display: none;
 }
 
 .radio-design {
@@ -62,7 +57,6 @@ h6 {
     hsl(0, 91%, 55%),
     hsl(0, 60%, 35%)
   );
-  position: relative;
 }
 
 .radio-design::before {
