@@ -49,3 +49,11 @@ function changeQuestion(from, to) {
 
 import { Aktualne } from "./Zmrzliny/index.js";
 Aktualne();
+
+const datum = new Date();
+const den = datum.getDate();
+const mesic = datum.getMonth() + 1;
+const rok = datum.getFullYear();
+
+const datumElm = document.querySelector(".aktu-na-cepu");
+datumElm.innerHTML = `Dneska ${den}. ${mesic}. ${rok} zmrz.li`;
