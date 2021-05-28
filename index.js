@@ -22,6 +22,7 @@ function setCurrentQuestion(question) {
 }
 
 function setQestionIndicator(num) {
+  num.style.color = 'red';
   const indicatorEl = document.querySelector('.js-q-indicator');
   indicatorEl.textContent = `${num}/6`;
 }
