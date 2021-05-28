@@ -26,11 +26,8 @@
 
 /* MAIN */
 /* =============================================== */
-
-.title-coJeNaCepu {
-  text-align: center;
-}
 /* .container3 {
+.container3 {
   min-width: 90%;
   margin: 0.6rem;
   padding: 0rem;
@@ -103,7 +100,7 @@ h6 {
 }
 
 .radio-design::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: inherit;
   height: inherit;
