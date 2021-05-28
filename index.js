@@ -11,13 +11,21 @@ btnBackEl.addEventListener('click', () => {
   changeQuestion(currentQ, currentQ - 1);
 });
 
+function hideEl(element) {
+  element.classList.add('hide');
+}
+
+function showEl(element) {
+  element.classList.remove('hide');
+}
+
 function getCurrentQuestion() {
-  const gameEl = document.getElementById('game');
+  const gameEl = document.getElementById('cont-game');
   return Number(gameEl.dataset.currentQ);
 }
 
 function setCurrentQuestion(question) {
-  const gameEl = document.getElementById('game');
+  const gameEl = document.getElementById('cont-game');
   gameEl.dataset.currentQ = question;
 }
 
@@ -37,14 +45,24 @@ function changeQuestion(from, to) {
   });
 
   if (chekedItems.length > 0) {
-    document.querySelector(`.js-game-q${from}`).classList.add('hide');
-    document.querySelector(`.js-game-q${to}`).classList.remove('hide');
+    hideEl(document.querySelector(`.js-game-q${from}`));
+    showEl(document.querySelector(`.js-game-q${to}`));
     setCurrentQuestion(to);
     setQestionIndicator(to);
   } else {
     alert('zaškrtni položku');
   }
 }
+
+/* function setCurrentAnswers() {
+  const inputEls = Array.from(
+    document.querySelectorAll('#cont-game');
+  );
+  const chekedItems = inputEls.filter((item) => {
+    if (item.checked === true) {
+      return item;
+    }
+  });  */
 
 import { Aktualne } from './Zmrzliny/index.js';
 Aktualne();
