@@ -1,0 +1,21 @@
+li.zmrzli__name {
+  font-size: 1rem;
+  list-style: none;
+  text-transform: uppercase;
+}
+.nabidka {
+  border-radius: 0.5rem;
+  background: hsla(0, 0%, 80%, 0.14);
+  padding: 0.6rem;
+  margin: 0rem;
+}
+
+.zmrzli__name {
+  background: hsla(0, 0%, 80%, 0.14);
+  align-items: center;
+  border-radius: 6.25rem;
+  padding: 0.8rem 1rem;
+  margin: 0.6rem 0rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
