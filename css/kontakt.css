@@ -7,9 +7,11 @@ html {
   box-sizing: inherit;
 }
 
-#kontakt {
+.kontakty {
   row-gap: 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 #ikona-mapa,
