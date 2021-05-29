@@ -111,4 +111,4 @@ const mesic = datum.getMonth() + 1;
 const rok = datum.getFullYear();
 
 const datumElm = document.querySelector('.aktu-na-cepu');
-datumElm.innerHTML = `Dneska ${den}. ${mesic}. ${rok} zmrz.li`;
+datumElm.innerHTML = `${den}. ${mesic}. ${rok} pro vás máme`;
