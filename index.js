@@ -1,4 +1,5 @@
 import { gameAnswers } from './zmrzliny.js';
+import { zmrzliny } from './zmrzliny.js';
 
 const btnForwardEl = document.querySelector('.js-btn-forward');
 const btnBackEl = document.querySelector('.js-btn-back');
@@ -18,13 +19,46 @@ btnForwardEl.addEventListener('click', () => {
     const values5 = gameAnswers[answers[4][0]][answers[4][1]];
 
     const allValues = values1.concat(values2, values3, values4, values5);
-    /*  console.log(allValues); */
 
-    results(allValues);
+    const result = results(allValues);
+    const icecreamResult = lookUp(result);
+    showAnswer(icecreamResult);
   }
 });
+
+function showAnswer(icecreamResult) {
+  document.querySelector('.game-text').textContent = icecreamResult.name;
+}
+
+function lookUp(id) {
+  return zmrzliny.filter((item) => {
+    if (item.id === id) {
+      return item;
+    }
+  });
+}
+
 function results(allValues) {
-  console.log(allValues);
+  const numbersOfAnswers = {};
+
+  allValues.forEach((answer) => {
+    if (!numbersOfAnswers[answer]) {
+      numbersOfAnswers[answer] = 1;
+    } else {
+      numbersOfAnswers[answer] += 1;
+    }
+  });
+  console.log(numbersOfAnswers);
+  let maxCount = 0;
+  let maxIndex = '';
+
+  for (const index in numbersOfAnswers) {
+    if (numbersOfAnswers[index] > maxCount) {
+      maxCount = numbersOfAnswers[index];
+      maxIndex = index;
+    }
+  }
+  return maxIndex;
 }
 
 btnBackEl.addEventListener('click', () => {
