@@ -1,11 +1,12 @@
-import { zmrzliny } from "../zmrzliny.js";
+import { zmrzliny } from '../zmrzliny.js';
 
 export const Aktualne = () => {
-  const aktualneElm = document.querySelector("#aktualne");
+  const aktualneElm = document.querySelector('#aktualne');
   const dnesZmrzli = zmrzliny.map((item) => {
-    return (aktualneElm.innerHTML += `<div class="${item.id}"><li class="prichut">${item.name}</li></div>`);
+    return (aktualneElm.innerHTML += `<div class="nabidka"><li class="prichut" style="background-color: ${item.backgroundColor}; color: ${item.color}";>${item.name}</li></div>`);
   });
 };
+
 // const gameAnswers = {
 //       q1: {
 //         a1: [ 13, 4, "" ],
