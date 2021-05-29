@@ -1,3 +1,5 @@
+import { gameAnswers } from './zmrzliny.js';
+
 const btnForwardEl = document.querySelector('.js-btn-forward');
 const btnBackEl = document.querySelector('.js-btn-back');
 
@@ -9,9 +11,21 @@ btnForwardEl.addEventListener('click', () => {
     hideEl(btnBackEl);
     hideEl(btnForwardEl);
     const answers = getAllAnswers();
-    console.log(answers);
+    const values1 = gameAnswers[answers[0][0]][answers[0][1]];
+    const values2 = gameAnswers[answers[1][0]][answers[1][1]];
+    const values3 = gameAnswers[answers[2][0]][answers[2][1]];
+    const values4 = gameAnswers[answers[3][0]][answers[3][1]];
+    const values5 = gameAnswers[answers[4][0]][answers[4][1]];
+
+    const allValues = values1.concat(values2, values3, values4, values5);
+    /*  console.log(allValues); */
+
+    results(allValues);
   }
 });
+function results(allValues) {
+  console.log(allValues);
+}
 
 btnBackEl.addEventListener('click', () => {
   const currentQ = getCurrentQuestion();
@@ -82,6 +96,11 @@ function getAllAnswers() {
 
   return answers;
 }
+
+/* function checkedAllAnswers() {
+  const elements = Array.from(getAllAnswers());
+  return elements;
+} */
 
 import { Aktualne } from './Zmrzliny/index.js';
 Aktualne();
