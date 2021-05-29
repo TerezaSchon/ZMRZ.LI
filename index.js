@@ -4,11 +4,21 @@ const btnBackEl = document.querySelector('.js-btn-back');
 btnForwardEl.addEventListener('click', () => {
   const currentQ = getCurrentQuestion();
   changeQuestion(currentQ, currentQ + 1);
+  showEl(btnBackEl);
+  if (getCurrentQuestion() === 6) {
+    hideEl(btnBackEl);
+    hideEl(btnForwardEl);
+    const answers = getAllAnswers();
+    console.log(answers);
+  }
 });
 
 btnBackEl.addEventListener('click', () => {
   const currentQ = getCurrentQuestion();
   changeQuestion(currentQ, currentQ - 1);
+  if (getCurrentQuestion() === 1) {
+    hideEl(btnBackEl);
+  }
 });
 
 function hideEl(element) {
@@ -34,17 +44,24 @@ function setQestionIndicator(num) {
   indicatorEl.textContent = `${num}/6`;
 }
 
-function changeQuestion(from, to) {
-  const inputEls = Array.from(
-    document.querySelectorAll(`.js-game-q${from} input`),
-  );
-  const chekedItems = inputEls.filter((item) => {
+function checkedItemsFilter(inputEls) {
+  const elements = Array.from(inputEls);
+
+  const checkedItems = elements.filter((item) => {
     if (item.checked === true) {
       return item;
     }
   });
 
-  if (chekedItems.length > 0) {
+  return checkedItems;
+}
+
+function changeQuestion(from, to) {
+  const checkedItems = checkedItemsFilter(
+    document.querySelectorAll(`.js-game-q${from} input`),
+  );
+
+  if (checkedItems.length > 0) {
     hideEl(document.querySelector(`.js-game-q${from}`));
     showEl(document.querySelector(`.js-game-q${to}`));
     setCurrentQuestion(to);
@@ -54,15 +71,14 @@ function changeQuestion(from, to) {
   }
 }
 
-/* function setCurrentAnswers() {
-  const inputEls = Array.from(
-    document.querySelectorAll('#cont-game');
-  );
-  const chekedItems = inputEls.filter((item) => {
-    if (item.checked === true) {
-      return item;
-    }
-  });  */
+/* function getAllAnswers() {
+  const checkedAnsItems = document.querySelectorAll('#cont-game input');
+  checkedAnsItems.forEach((imput) => {
+    imput.addEventListener('change', () => {
+      console.log(imput.value);
+    });
+  });
+} */
 
 import { Aktualne } from './Zmrzliny/index.js';
 Aktualne();
