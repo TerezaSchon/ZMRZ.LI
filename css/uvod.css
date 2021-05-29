@@ -22,9 +22,10 @@ h2 {
 .btn-na-cepu {
   background-color: #eb284c;
   color: white;
+  text-transform: uppercase;
   border: solid #252729 1px;
   border-radius: 6.25rem;
   padding: 1.5rem;
-  margin: 1rem;
-  font-size: 2rem;
+  margin: 1.5rem;
+  font-size: 1.5rem;
 }

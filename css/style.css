@@ -1,10 +1,10 @@
 /* font-family: 'Bangers', cursive; */
 html {
-    box-sizing: border-box;
-  }
-  *,
-  ::after,
-  ::before {
-    box-sizing: inherit;
-  }
-  /* font-family: 'Bangers', cursive; */
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+/* font-family: 'Bangers', cursive; */
