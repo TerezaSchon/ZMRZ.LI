@@ -12,6 +12,13 @@ html {
   text-align: center;
   display: flex;
   flex-direction: column;
+  min-width: 320px;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.mapa-CB {
+  max-width: 80%vw;
 }
 
 #ikona-mapa,
