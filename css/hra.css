@@ -89,7 +89,6 @@ h6 {
   border-radius: 6.25rem;
   padding: 0.8rem 1rem;
   margin: 0.6rem 0.6rem;
-  cursor: pointer;
   transition: 0.4s;
 }
 
@@ -103,7 +102,7 @@ h6 {
   );
   transition: 0.3s;
 }
-.btn-design {
+/* .btn-design {
   padding: 0.3rem;
   width: 1.4rem;
   height: 1.4rem;
@@ -112,6 +111,12 @@ h6 {
   transform: scale(1.1);
   transition: 0.3s;
   cursor: pointer;
+} */
+.js-btn-back.hide,
+.js-btn-forward.hide {
+  display: block;
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* .btn-design :focus-within {
