@@ -23,13 +23,22 @@ html {
 body {
   /* display: grid;
   place-content: center; */
-
-  box-sizing: border-box;
   background-color: #252729;
   color: white;
   font-family: 'Montserrat';
-  font-size: 1rem;
+  font-size: 1.2rem;
   letter-spacing: 1px;
   /*  min-width: 320px;
   max-width: 768px; */
+}
+
+.pozadi__sipky {
+  display: block;
+  height: 2rem;
+  width: 100%;
+  background-image: url('../img_podklady/sipky_pozadi.svg');
+  filter: invert(100%);
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  margin: 2rem 0rem;
 }
