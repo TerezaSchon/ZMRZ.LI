@@ -20,11 +20,11 @@ h2 {
 }
 
 .btn-na-cepu {
-  background-color: red;
+  background-color: #eb284c;
   color: white;
   border: solid #252729 1px;
-  border-radius: 5px;
-  padding: 1rem;
+  border-radius: 6.25rem;
+  padding: 1.5rem;
   margin: 1rem;
   font-size: 2rem;
 }
