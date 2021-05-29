@@ -1,8 +1,27 @@
 .footer {
   background-color: hsla(0, 0%, 80%, 0.14);
   min-height: 3rem;
-  padding: 2rem;
+
   min-width: 320px;
   max-width: 768px;
   margin: 0 auto;
+}
+
+.copyright {
+  margin-top: 1rem;
+}
+
+.sipky-pozadi-footer {
+  display: block;
+  height: 2rem;
+  width: 100%;
+  margin-top: 1rem;
+  background-image: url('../img_podklady/sipky_pozadi.svg');
+
+  filter: invert(100%);
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+
+  min-width: 320px;
+  max-width: 768px;
 }
