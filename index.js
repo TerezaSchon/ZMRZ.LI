@@ -71,14 +71,17 @@ function changeQuestion(from, to) {
   }
 }
 
-/* function getAllAnswers() {
-  const checkedAnsItems = document.querySelectorAll('#cont-game input');
-  checkedAnsItems.forEach((imput) => {
-    imput.addEventListener('change', () => {
-      console.log(imput.value);
-    });
+function getAllAnswers() {
+  const checkedAnsItems = checkedItemsFilter(
+    document.querySelectorAll('#cont-game input'),
+  );
+
+  const answers = checkedAnsItems.map((item) => {
+    return [item.dataset.question, item.dataset.answer];
   });
-} */
+
+  return answers;
+}
 
 import { Aktualne } from './Zmrzliny/index.js';
 Aktualne();
