@@ -131,11 +131,6 @@ function getAllAnswers() {
   return answers;
 }
 
-/* function checkedAllAnswers() {
-  const elements = Array.from(getAllAnswers());
-  return elements;
-} */
-
 import { Aktualne } from './Zmrzliny/index.js';
 Aktualne();
 
