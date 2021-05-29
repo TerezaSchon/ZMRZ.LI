@@ -14,7 +14,7 @@
 }
 
 .tecka {
-  color: red;
+  color: #eb284c;
 }
 
 .header-hlavni {
@@ -30,10 +30,7 @@
   align-items: center;
 }
 
-/* #menu__item--1,
-#menu__item--2,
-#menu__item--3,
-#menu__item--4 {
+/* #menu__item  {
   position: relative;
   display: inline-block;
 
@@ -61,7 +58,7 @@ h1 {
   height: 4rem;
   padding: 0rem;
   margin-right: 1rem;
-  border: solid red;
+  border: solid #eb284c;
   border-radius: 50%;
   background-color: transparent;
   background-size: contain;
