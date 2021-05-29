@@ -7,6 +7,21 @@ html {
   box-sizing: inherit;
 }
 
+.sipky-pozadi-kontakt {
+  display: block;
+  height: 2rem;
+  width: 100%;
+
+  background-image: url('../img_podklady/sipky_pozadi.svg');
+  filter: invert(50%);
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+
+  /* position: absolute; */
+  /*  top: 0;
+  left: 0; */
+}
+
 .kontakty {
   row-gap: 1rem;
   text-align: center;
