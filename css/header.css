@@ -65,9 +65,7 @@ a {
 .menu ul a {
   /* display: block; */
   width: 90%;
-
   border-bottom: 1px solid transparent;
-
   text-transform: uppercase;
 }
 
@@ -77,12 +75,9 @@ a {
 
 .menu li {
   position: relative;
-
   clear: both;
   color: #ddd;
-
   font-size: 2rem;
-
   text-transform: uppercase;
 }
 
@@ -90,7 +85,7 @@ a {
   background-image: url('../img_podklady/menu.svg');
   background-repeat: no-repeat;
   position: relative;
-
+  flex-shrink: 0;
   width: 4rem;
   height: 4rem;
   padding: 0rem;
@@ -124,15 +119,9 @@ a {
 
 .menu-closed {
   display: none;
-  height: 100%;
+  width: 100%;
+  height: 100vh;
   /* overflow-y: scroll;
   overflow-x: visible;
   transition: left 3s out back; */
 }
-
-/* .menu .menu-closed {
-  position: fixed;
-  right: 0;
-  top: 0;
-}
- */
