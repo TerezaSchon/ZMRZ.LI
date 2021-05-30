@@ -5,23 +5,21 @@ h3 {
   color: rgb(211, 211, 206);
   padding: 1rem;
 }
-h6 {
+.game-p {
   text-align: center;
+  color: hsl(0, 0%, 90%);
+  background-color: hsla(0, 0%, 80%, 0.1);
+  padding: 2rem;
+  border-radius: 0.5rem;
 }
 .cont-game {
   min-width: 320px;
   max-width: 768px;
   margin: 0 auto;
+  margin-bottom: 2rem;
   align-items: center;
   border-radius: 0.5rem;
   background: hsla(0, 0%, 80%, 0.14);
-  padding: 0.6rem;
-}
-.game-f {
-  margin: 1rem;
-  border-radius: 0.5rem;
-  background: hsla(0, 0%, 80%, 0.14);
-  border-radius: 6.25rem;
   padding: 0.6rem;
 }
 .radio-label {
@@ -75,7 +73,6 @@ h6 {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   font-size: 1.1rem;
-  font-weight: 900;
   transition: 0.3s;
 }
 
@@ -86,28 +83,33 @@ h6 {
 .arrowed {
   display: flex;
   justify-content: space-between;
-  border-radius: 6.25rem;
+  margin-top: 2rem;
   padding: 0.8rem 1rem;
-  margin: 0.6rem 0.6rem;
+  border-radius: 0.5rem;
   transition: 0.4s;
+  background-color: hsla(0, 0%, 80%, 0.1);
 }
+
+/* .btn-design:checked + .btn-design::before {
+  transform: scale(0);
+} */
 
 .btn-design:hover {
   border: none;
-  border-radius: 50%;
   background: linear-gradient(
     to right bottom,
     hsl(0, 91%, 55%),
     hsl(0, 60%, 35%)
   );
   transition: 0.3s;
+  transform: scale(1.1);
 }
 .btn-design {
-  padding: 0.3rem;
-  width: 1.4rem;
+  width: 3rem;
   height: 1.4rem;
+  background: hsl(0, 0%, 90%);
   border: none;
-  border-radius: inherit;
+  border-radius: 6.25rem;
   transform: scale(1.1);
   transition: 0.3s;
   cursor: pointer;
@@ -119,28 +121,26 @@ h6 {
   pointer-events: none;
 }
 
-/* .btn-design :focus-within {
-  background: hsla(0, 0%, 80%, 0.14);
-} */
-
 img {
-  width: 100%;
-}
-#btn-confirm {
-  display: none;
-  min-width: fit-content;
-  padding: 0.3rem;
-}
-#btn-confirm:hover {
-  border-radius: inherit;
+  height: 100%;
+  appearance: none;
 }
 
-.logo {
-  align-content: center;
-  width: 5rem;
-  width: 5rem;
+img.logo {
+  justify-content: center;
+  height: inherit;
+}
+.game-f {
+  margin: 1rem;
+  /*   border-radius: 0.5rem;
+  background: hsla(0, 0%, 80%, 0.14); */
+  border-radius: 6.25rem;
+  padding: 0.6rem;
 }
 
 .hide {
   display: none;
+}
+.one {
+  color: hsl(0, 91%, 55%);
 }
