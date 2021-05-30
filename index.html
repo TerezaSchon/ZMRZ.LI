@@ -438,12 +438,15 @@
       <section class="kontakty" id="kontakty">
         <span class="sipky-pozadi-kontakt"></span>
         <header><h2>Kde nás najdeš?</h2></header>
-        <div class="kontakt__adresa">
+        <div class="kontakt__obrazek">
           <img
             class="mapa-CB"
             src="img_podklady/img_kontakt/mapa_ver3.jpeg"
             alt="mapa Zmrz.li"
           />
+        </div>
+
+        <div class="kontakt__adresa">
           <div>
             <img
               id="ikona-mapa"
@@ -451,7 +454,17 @@
               alt="ikona mapa"
             />
           </div>
-          <p>Hradební 347/14, Budějce</p>
+          <a
+            href="https://www.google.com/maps/place/Zmrz.li/@48.9766076,14.4762286,20z/data=!4m5!3m4!1s0x47734fce7ec84f35:0x722df8fea3d2c392!8m2!3d48.9766173!4d14.4763642"
+          >
+            <p>
+              Sem si přijď pro zmrz.linu: <br />
+              <span class="kontakt__adresa--text">Hradební </span>347/<span
+                class="kontakt__adresa--text"
+                >14</span
+              >, Budějce
+            </p></a
+          >
         </div>
 
         <div class="kontakt__gps">
@@ -463,11 +476,11 @@
             />
           </div>
           <p>
-            GPS: <br />
-            48.9767381 N <br />
-            14.4762086 E
+            <span class="gps">Jedeš si souřadnice? Pak zamiř tudy: <br /></span>
+            <span class="kontakt__gps--text"> 48.9767381N 14.4762086E </span>
           </p>
         </div>
+
         <div class="kontakt__telefon">
           <div>
             <img
@@ -476,8 +489,12 @@
               alt="ikona telefon"
             />
           </div>
-          <p>+420 734 839 477</p>
+          <p>
+            Chceš si objednat po telefonu? Klidně zavolej: <br />
+            +420<span class="kontakt__telefon--text"> 734 839 477</span>
+          </p>
         </div>
+
         <div class="kontakt__mail">
           <div>
             <img
@@ -486,8 +503,12 @@
               alt="ikona e-mail"
             />
           </div>
-          <p>joker@zmrz.li</p>
+          <p>
+            Objednávka přes mail? Kliďánko... <br />
+            <span class="kontakt__mail--text">joker@zmrz.li</span>
+          </p>
         </div>
+
         <div class="kontakt__fb">
           <div>
             <img
@@ -496,7 +517,13 @@
               alt="ikona chat"
             />
           </div>
-          <p>facebook.com/zmrz.li</p>
+          <a href="https://www.facebook.com/zmrz.li">
+            <p>
+              Jseš spíš na socky? Umíme. Objednej, anebo třeba jen napiš, že se
+              máš fajn na náš
+              <span class="kontakt__fb--text">facebook</span>
+            </p>
+          </a>
         </div>
       </section>
     </main>
@@ -504,7 +531,9 @@
     <!-- footer -->
 
     <footer class="footer">
-      <span class="copyright">© holky z cowo, 2021</span>
+      <span class="copyright"
+        >© <span class="footer-cervena"> holky</span> z cowo, 2021</span
+      >
       <span class="sipky-pozadi-footer"></span>
     </footer>
     <script type="module" src="index.js"></script>
