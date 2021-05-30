@@ -26,9 +26,15 @@
 #ikona-hodiny {
   width: 2rem;
   font-weight: bolder;
-  margin-right: 1rem;
+
   filter: invert(100%);
   align-content: center;
+}
+
+.ikona {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
 }
 
 #ikona-ruka {
@@ -53,7 +59,7 @@
   justify-items: center;
   text-decoration: none;
   text-align: start;
-  margin: 1rem;
+  margin: 0;
 }
 
 .kontakt__adresa--text,
