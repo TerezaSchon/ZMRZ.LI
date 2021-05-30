@@ -1,11 +1,15 @@
-html {
-  box-sizing: border-box;
-}
-*,
-::after,
-::before {
-  box-sizing: inherit;
-}
+/* body { */
+/*   font-family:  
+    background-color: */
+/*   display: flex;
+  min-width: 320px;
+  max-width: 768px;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  background-color: #1c1b1b;
+  color: white;
+  width: 100vw;
+} */
 
 body {
   background-color: #252729;
@@ -13,6 +17,23 @@ body {
   font-family: 'Montserrat';
   font-size: 1.2rem;
   letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.stranka {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  min-width: 320px;
+  max-width: 768px;
 }
 
 .pozadi__sipky {
@@ -23,5 +44,5 @@ body {
   filter: invert(100%);
   background-repeat: repeat-x;
   background-size: auto 100%;
-  margin: 2rem 0rem;
+  margin-bottom: 3rem;
 }

@@ -1,5 +1,4 @@
-import { gameAnswers } from './zmrzliny.js';
-import { zmrzliny } from './zmrzliny.js';
+import { gameAnswers, zmrzliny } from './zmrzliny.js';
 
 const btnForwardEl = document.querySelector('.js-btn-forward');
 const btnBackEl = document.querySelector('.js-btn-back');
@@ -136,5 +135,5 @@ function getAllAnswers() {
 }
 
 import { Aktualne } from './Zmrzliny/index.js';
-
 Aktualne();
+//jeNaCepu();

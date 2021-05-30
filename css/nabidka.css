@@ -1,15 +1,11 @@
 .nabidka {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
+  padding: 0.5rem;
+  margin: 0 auto;
   min-width: 320px;
   max-width: 768px;
-  margin-bottom: 2rem;
-  margin: 0 auto;
 }
 
-.prichut {
+.dostupne_ano {
   list-style: none;
   text-transform: uppercase;
   align-items: center;
@@ -24,12 +20,10 @@
   letter-spacing: 0.2rem;
 }
 
-.zavreno {
+.dostupne_ne {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  .stranka {
-    max-width: 960px;
-  }
+.zavreno {
+  display: none;
 }

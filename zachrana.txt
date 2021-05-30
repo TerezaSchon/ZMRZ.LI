@@ -1,3 +1,390 @@
+import { zmrzliny } from '../zmrzliny.js';
+
+const aktualneElm = document.querySelector('#aktualne');
+const datum = new Date();
+const den = datum.getDate();
+const mesic = datum.getMonth() + 1;
+const rok = datum.getFullYear();
+const denVTydnu = datum.getDay();
+
+const datumElm = document.querySelector('.datum');
+datumElm.innerHTML = `${den}. ${mesic}. ${rok} tu máme`;
+
+export const Aktualne = () => {
+  const dnesZmrzli = zmrzliny.map((item) => {
+    if (denVTydnu === 6 || denVTydnu === 0) {
+      datumElm.innerHTML = `<h3>O víkendu máme zavřeno, jdi na pivo a vyhlížej pondělí :)</h3>`;
+    } else {
+      return (aktualneElm.innerHTML += `<div class="dnesniZmrzli"><li class="dostupne_${item.naCepu}" style="background-color: ${item.backgroundColor}; color: ${item.color}";>${item.name}</li></div>`);
+    }
+  });
+};
+
+
+//spolecne.css
+
+/* body { */
+/*   font-family:  
+    background-color: */
+/*   display: flex;
+  min-width: 320px;
+  max-width: 768px;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  background-color: #1c1b1b;
+  color: white;
+  width: 100vw;
+} */
+
+body {
+  /* display: grid;
+  place-content: center; */
+  background-color: #252729;
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  /*  min-width: 320px;
+  max-width: 768px; */
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.stranka {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  min-width: 320px;
+  max-width: 768px;
+}
+
+.pozadi__sipky {
+  display: block;
+  height: 2rem;
+  width: 100%;
+  background-image: url('../img_podklady/sipky_pozadi.svg');
+  filter: invert(100%);
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  margin-bottom: 3rem;
+}
+
+
+//nabidka.css
+.nabidka {
+  padding: 0.5rem;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 768px;
+}
+
+.dostupne_ano {
+  list-style: none;
+  text-transform: uppercase;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-weight: 900;
+  border-radius: 1rem;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0rem;
+  letter-spacing: 0.2rem;
+}
+
+.dostupne_ne {
+  display: none;
+}
+
+.zavreno {
+  display: none;
+}
+
+//oteviracka.css
+.oteviracka {
+  padding: 0.5rem;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 768px;
+}
+
+.container_tabulka {
+  min-width: 320px;
+  max-width: 768px;
+  margin: 0 auto;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: hsla(0, 0%, 80%, 0.14);
+  padding: 0.6rem;
+}
+
+.box1 {
+  display: block;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.box2 {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  height: 200px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  width: 49%;
+}
+
+.sloupec {
+  font-size: 1.8rem;
+}
+
+
+//zmrzliny.js
+export const zmrzliny = [
+  {
+    id: '0',
+    name: 'Vanilka – rum',
+    backgroundColor: '#fff200',
+    color: '#1B1A1A',
+    naCepu: 'ano',
+  },
+  {
+    id: '1',
+    name: 'Slaný karamel',
+    backgroundColor: '#ee7b22',
+    naCepu: 'ano',
+  },
+  {
+    id: '2',
+    name: 'Bezinka',
+    backgroundColor: '#dfc07d',
+    color: '#1B1A1A',
+    naCepu: 'ano',
+  },
+  {
+    id: '3',
+    name: 'Tmavá čokoláda – uzená sůl',
+    backgroundColor: '#3c2415',
+    naCepu: 'ano',
+  },
+  {
+    id: '4',
+    name: 'Mléčný čokoládový shake',
+    backgroundColor: '#754c29',
+    naCepu: 'ano',
+  },
+  {
+    id: '5',
+    name: 'Banán – arašídovo slaninová směs',
+    backgroundColor: '#f7941d',
+    naCepu: 'ano',
+  },
+  {
+    id: '6',
+    name: 'Bourbon – sušenky z kukuřičných lupínků',
+    backgroundColor: '#2b3990',
+    naCepu: 'ano',
+  },
+  {
+    id: '7',
+    name: 'Káva arabica',
+    backgroundColor: '#8b5e3c',
+    naCepu: 'ano',
+  },
+  {
+    id: '8',
+    name: 'Oolong čaj',
+    backgroundColor: '#71732f',
+    naCepu: 'ano',
+  },
+  {
+    id: '9',
+    name: 'Masala čaj',
+    backgroundColor: '#e12b27',
+    naCepu: 'ano',
+  },
+  {
+    id: '10',
+    name: 'Černé pivo',
+    backgroundColor: '#231f20',
+    naCepu: 'ne',
+  },
+  {
+    id: '11',
+    name: 'Med – grahamové sušenky',
+    backgroundColor: '#f79441',
+    naCepu: 'ne',
+  },
+  {
+    id: '12',
+    name: 'Zázvor v řeckém jogurtu',
+    backgroundColor: '#469172',
+    naCepu: 'ne',
+  },
+  {
+    id: '13',
+    name: 'Bílá čokoláda s mákem',
+    backgroundColor: '#c2b59b',
+    color: '#1B1A1A',
+    naCepu: 'ne',
+  },
+  {
+    id: '14',
+    name: 'Pražená bílá čokoláda – levandule',
+    backgroundColor: '#7f3f98',
+    naCepu: 'ne',
+  },
+  {
+    id: '15',
+    name: 'Borůvky v řeckém jogurtu – levandule',
+    backgroundColor: '#4c2d85',
+    naCepu: 'ne',
+  },
+  {
+    id: '16',
+    name: 'meruňka – červený rooibos',
+    backgroundColor: '#FF9967',
+    color: '#1B1A1A',
+    naCepu: 'ne',
+  },
+  {
+    id: '17',
+    name: 'Broskev – černý čaj',
+    backgroundColor: '#f26522',
+    naCepu: 'ne',
+  },
+  {
+    id: '18',
+    name: 'Ananas – zelený čaj s jasmínem',
+    backgroundColor: '#cbd63f',
+    color: '#1B1A1A',
+    naCepu: 'ne',
+  },
+  {
+    id: '19',
+    name: 'Máta & pepř – kousky čokolády',
+    backgroundColor: '#00a79d',
+    naCepu: 'ne',
+  },
+  {
+    id: '20',
+    name: 'Šípek',
+    backgroundColor: '#a32823',
+    naCepu: 'ne',
+  },
+  {
+    id: '21',
+    name: 'Smetanový sýr – ostružinový vír',
+    backgroundColor: '#40016b',
+    naCepu: 'ne',
+  },
+  {
+    id: '22',
+    name: 'Donut',
+    backgroundColor: '#dfc07d',
+    color: '#1B1A1A',
+    naCepu: 'ne',
+  },
+  {
+    id: '23',
+    name: 'Leche merengada – citronová tříšť',
+    backgroundColor: '#1b75bc',
+    naCepu: 'ne',
+  },
+  {
+    id: '24',
+    name: 'Pomerančový sorbet – šafrán',
+    backgroundColor: '#f15a29',
+    naCepu: 'ne',
+  },
+  {
+    id: '25',
+    name: 'Hrušky & rýnský ryzlink sorbet – zázvor',
+    backgroundColor: '#8dc63f',
+    color: '#1B1A1A',
+    naCepu: 'ne',
+  },
+  {
+    id: '26',
+    name: 'Merlot & cola sorbet',
+    backgroundColor: '#601d25',
+    naCepu: 'ne',
+  },
+  {
+    id: '27',
+    name: 'Kokos & limetka sorbet – chilli',
+    backgroundColor: '#00a14b',
+    naCepu: 'ne',
+  },
+  {
+    id: '28',
+    name: 'Citron sorbet – bazalka',
+    backgroundColor: '#D3FA37',
+    color: '#1B1A1A',
+    naCepu: 'ne',
+  },
+  {
+    id: '29',
+    name: 'Maliny – šampaňské sorbet',
+    backgroundColor: '#eb284c',
+    naCepu: 'ne',
+  },
+];
+
+export const gameAnswers = {
+  q1: {
+    a1: ['1', '7', '3', '30'],
+    a2: ['19', '21', '6', '10'],
+    a3: ['27', '30', '2', '5'],
+    a4: ['26', '20', '14', '18'],
+    a5: ['15', '13', '8', '12'],
+  },
+  q2: {
+    a1: ['26', '13', '23', '30'],
+    a2: ['8', '14', '2', '10'],
+    a3: ['1', '6', '20', '12'],
+    a4: ['7', '21', '5', '15'],
+    a5: ['18', '27', '3', '19'],
+  },
+  q3: {
+    a1: ['15', '12', '10', '19'],
+    a2: ['30', '20', '6', '5'],
+    a3: ['27', '5', '2', '23'],
+    a4: ['26', '21', '1', '18'],
+    a5: ['7', '12', '13', '8'],
+  },
+  q4: {
+    a1: ['19', '18', '14', '7'],
+    a2: ['15', '23', '21', '1'],
+    a3: ['10', '5', '27', '3'],
+    a4: ['30', '2', '6', '8'],
+    a5: ['13', '20', '12', '26'],
+  },
+  q5: {
+    a1: ['30', '10', '3', '6'],
+    a2: ['5', '13', '20', '26'],
+    a3: ['18', '15', '2', '14'],
+    a4: ['19', '27', '7', '12'],
+    a5: ['23', '21', '8', '1'],
+  },
+};
+
+
+//index.html
 <!DOCTYPE html>
 <html lang="cs">
   <head>
@@ -31,30 +418,23 @@
       <h1>ZMRZ<span class="tecka">.</span>LI</h1>
 
       <button id="menu__btn1" class="menu__btn1"></button>
-
-      <div id="menu" class="menu menu-closed">
-        <nav>
-          <button id="menu__btn2" class="menu__btn2"></button>
-          <ul>
-            <li>
-              <a href="#uvod" id="menu__item--1" class="item">pojď dom</a>
-            </li>
-            <li>
-              <a href="#nabidka" id="menu__item--2" class="item"
-                >aktu na čepu</a
-              >
-            </li>
-            <li>
-              <a href="#cont-game" id="menu__item--3" class="item"
-                >poznej tu svou</a
-              >
-            </li>
-            <li>
-              <a href="#kontakty" id="menu__item--4" class="item">najdi nás</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav id="menu" class="menu menu-closed">
+        <button id="menu__btn2" class="menu__btn2"></button>
+        <ul>
+          <li><a href="#uvod" id="menu__item--1" class="item">pojď dom</a></li>
+          <li>
+            <a href="#nabidka" id="menu__item--2" class="item">aktu na čepu</a>
+          </li>
+          <li>
+            <a href="#cont-game" id="menu__item--3" class="item"
+              >poznej tu svou</a
+            >
+          </li>
+          <li>
+            <a href="#kontakty" id="menu__item--4" class="item">najdi nás</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- ------ -->
@@ -71,11 +451,7 @@
           <h2>Tyhle zmrz.liny Tě budou bavit</h2>
         </header>
 
-        <a href="#nabidka"
-          ><button id="btn-na-cepu" class="btn-na-cepu">
-            právě na čepu...
-          </button>
-        </a>
+        <button id="btn-na-cepu" class="btn-na-cepu">právě na čepu...</button>
       </section>
       <div><span class="pozadi__sipky"></span></div>
 
@@ -114,10 +490,10 @@
         <header>
           <h2 class="title-poznejTuSvou">Poznej tu svou</h2>
         </header>
-        <p class="game-p">
+        <h6>
           Nejseš si jist/á, jakou zmrz.linu u nás ochutnat? Udělej si krátkej
           test, zabere Ti možná minutu, nech si poradit a pak se rozhodni;-)
-        </p>
+        </h6>
         <div class="js-game-q1 game">
           <h3>Jaká je Tvoje oblíbená značka bot?</h3>
           <label class="radio-label">
@@ -438,27 +814,23 @@
 
         <div class="js-game-q6 game-f hide">
           <h2>STŘELEC</h2>
-          <p class="game-p">
+          <h6>
             Nebojíš se výzev, limeta s pikantním chili ponořená do kokosového
             mlíka je volba pro Tebe. thai chili
-          </p>
+          </h6>
           <img class="logo" src="img_podklady/logo-joker-velky.png" />
-          <div class="game-text">doporucujeme ti ochutnat tuto zmrzlinu</div>
-          <div class="js-game-answer"></div>
-          <a href="#nabidka" id="menu__item--2" class="item hide"
-            >aktu na čepu</a
-          >
+          <div class="game-final">
+            <div class="game-text">doporucujeme ti tyto zmrzliny ochutnat</div>
+          </div>
         </div>
 
         <div class="arrowed">
           <button class="js-btn-back btn-design hide">
-            <img src="img_podklady/sipky_pozadi.svg" />
+            <img src="img_podklady/sipkaLeftBlack.svg" />
           </button>
-          <div class="indicator">
-            <span class="js-q-indicator one">1</span>/6
-          </div>
+          <div class="js-q-indicator"><span class="">1</span>/6</div>
           <button class="js-btn-forward btn-design">
-            <img src="img_podklady/sipky_pozadi.svg" />
+            <img src="img_podklady/sipkaRightBlack.svg" />
           </button>
         </div>
       </section>
@@ -469,15 +841,12 @@
 
       <section id="kontakty" class="kontakty" class="stranka">
         <header><h2>Kde nás najdeš?</h2></header>
-        <div class="kontakt__obrazek">
+        <div class="kontakt__adresa">
           <img
             class="mapa-CB"
             src="img_podklady/img_kontakt/mapa_ver3.jpeg"
             alt="mapa Zmrz.li"
           />
-        </div>
-
-        <div class="kontakt__adresa">
           <div>
             <img
               id="ikona-mapa"
@@ -485,41 +854,7 @@
               alt="ikona mapa"
             />
           </div>
-          <a
-            href="https://www.google.com/maps/place/Zmrz.li/@48.9766076,14.4762286,20z/data=!4m5!3m4!1s0x47734fce7ec84f35:0x722df8fea3d2c392!8m2!3d48.9766173!4d14.4763642"
-          >
-            <p>
-              Sem si přijď pro zmrz.linu: <br />
-              <span class="kontakt__adresa--text">Hradební </span>347/<span
-                class="kontakt__adresa--text"
-                >14</span
-              >, Budějce
-            </p></a
-          >
-        </div>
-
-        <div class="kontakt__oteviracka">
-          <div>
-            <img
-              id="ikona-hodiny"
-              src="img_podklady/img_kontakt/clock-regular.svg"
-              alt=""
-            />
-          </div>
-          <span
-            >Jsme tu ve všední dny od
-            <a href="oteviracka">
-              <span class="kontakt__oteviracka--text">10. do 18. hodiny</span
-              >,</a
-            >
-            ale aktualizujeme se na faceboku
-            <a href="https://www.facebook.com/zmrz.li">
-              <img
-                id="ikona-ruka"
-                src="img_podklady/img_kontakt/hand-point-right-solid.svg"
-                alt=""
-            /></a>
-          </span>
+          <p>Hradební 347/14, Budějce</p>
         </div>
 
         <div class="kontakt__gps">
@@ -531,11 +866,11 @@
             />
           </div>
           <p>
-            <span class="gps">Jedeš si souřadnice? Pak zamiř tudy: <br /></span>
-            <span class="kontakt__gps--text"> 48.9767381N 14.4762086E </span>
+            GPS: <br />
+            48.9767381 N <br />
+            14.4762086 E
           </p>
         </div>
-
         <div class="kontakt__telefon">
           <div>
             <img
@@ -544,12 +879,8 @@
               alt="ikona telefon"
             />
           </div>
-          <p>
-            Chceš si objednat po telefonu? Klidně zavolej: <br />
-            +420<span class="kontakt__telefon--text"> 734 839 477</span>
-          </p>
+          <p>+420 734 839 477</p>
         </div>
-
         <div class="kontakt__mail">
           <div>
             <img
@@ -558,12 +889,8 @@
               alt="ikona e-mail"
             />
           </div>
-          <p>
-            Objednávka přes mail? Kliďánko... <br />
-            <span class="kontakt__mail--text">joker@zmrz.li</span>
-          </p>
+          <p>joker@zmrz.li</p>
         </div>
-
         <div class="kontakt__fb">
           <div>
             <img
@@ -572,24 +899,19 @@
               alt="ikona chat"
             />
           </div>
-          <a href="https://www.facebook.com/messages/t/1740053319571226">
-            <p>
-              Jseš spíš na socky? Umíme. Objednej, anebo třeba jen napiš, že se
-              máš fajn, na náš
-              <span class="kontakt__fb--text">facebook</span>
-            </p>
-          </a>
+          <p>facebook.com/zmrz.li</p>
         </div>
       </section>
     </main>
 
     <!-- footer -->
-    <footer class="footer" class="stranka">
-      <span class="copyright"
-        >© <span class="footer-cervena"> holky</span> z cowo, 2021</span
-      >
-      <span class="pozadi__sipky-footer"></span>
-    </footer>
+    <div>
+      <footer class="footer" class="stranka">
+        <span class="pozadi__sipky-footer"></span>
+        <span class="copyright">© holky z cowo, 2021</span>
+      </footer>
+    </div>
+
     <script type="module" src="index.js"></script>
     <script src="Header.js"></script>
   </body>
