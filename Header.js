@@ -3,14 +3,14 @@ const menuBtn1 = document.querySelector('#menu__btn1');
 const menu = document.querySelector('#menu');
 
 menuBtn1.addEventListener('click', () => {
-  menu.classList.remove('menu-closed');
+  menu.classList.add('menu-opened');
 });
 
 /* zavři menu po kliku na křížek */
 const menuBtn2 = document.querySelector('#menu__btn2');
 
 menuBtn2.addEventListener('click', () => {
-  menu.classList.add('menu-closed');
+  menu.classList.remove('menu-opened');
 });
 
 /* zavři menu po kliknutí na libovolnou záložku */
@@ -19,7 +19,7 @@ const menuItems = document.querySelectorAll('#menu .item');
 
 menuItems.forEach((item) => {
   item.addEventListener('click', () => {
-    menu.classList.add('menu-closed');
+    menu.classList.remove('menu-opened');
   });
 });
 
