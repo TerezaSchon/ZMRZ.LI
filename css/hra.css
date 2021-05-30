@@ -5,14 +5,6 @@ h3 {
   color: rgb(211, 211, 206);
   padding: 1rem;
 }
-.game-p,
-.game-text {
-  text-align: center;
-  color: hsl(0, 0%, 90%);
-  background-color: hsla(0, 0%, 80%, 0.1);
-  padding: 2rem;
-  border-radius: 0.5rem;
-}
 .cont-game {
   min-width: 320px;
   max-width: 768px;
@@ -22,6 +14,33 @@ h3 {
   border-radius: 0.5rem;
   background: hsla(0, 0%, 80%, 0.14);
   padding: 0.6rem;
+}
+.game-p {
+  text-align: center;
+  background: hsla(0, 0%, 80%, 0.14);
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+}
+.game-text {
+  text-align: center;
+  color: hsl(0, 0%, 90%);
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+}
+.game-nabidka {
+  margin: auto;
+  width: fit-content;
+  color: hsl(0, 0%, 90%);
+  background-color: #eb284c;
+  padding: 0.7rem;
+  border-radius: 6.25rem;
+}
+
+.game-answer {
+  text-align: center;
+  border-radius: 6.25rem;
+  padding: 0.8rem 1rem;
+  margin: 0.6rem 0rem;
 }
 .radio-label {
   display: flex;
@@ -134,8 +153,8 @@ h3 {
 }
 
 img.logo {
-  justify-content: center;
-  height: inherit;
+  width: 5rem;
+  margin: auto;
 }
 .hide {
   display: none;

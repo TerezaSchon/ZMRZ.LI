@@ -25,12 +25,15 @@ btnForwardEl.addEventListener('click', () => {
     showAnswer(icecreamResult);
     hideEl(document.querySelector('.indicator'));
     hideEl(document.querySelector('.game-p'));
+    showEl(document.querySelector('.game-nabidka'));
   }
 });
 
 function showAnswer(icecreamResult) {
-  document.querySelector('.js-game-answer').textContent =
-    icecreamResult[0].name;
+  const gameAnswerElm = document.querySelector('.js-game-answer');
+  gameAnswerElm.textContent = icecreamResult[0].name;
+  gameAnswerElm.style.backgroundColor = icecreamResult[0].backgroundColor;
+  gameAnswerElm.style.color = icecreamResult[0].color;
 }
 
 function lookUp(id) {
