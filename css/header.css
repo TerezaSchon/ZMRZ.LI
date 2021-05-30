@@ -104,7 +104,7 @@ a {
   padding: 0.5rem;
 }
 
-.menu ul li:hover {
+.menu-opened a:hover {
   color: #eb284c;
 }
 
