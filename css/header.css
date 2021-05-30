@@ -45,7 +45,7 @@ h1 {
   right: 0;
   width: 100%;
   height: 100vh;
-
+  line-height: 4rem;
   background-color: #252729;
 
   z-index: 20;
@@ -72,14 +72,16 @@ a {
   letter-spacing: 0.1rem;
   overflow-y: scroll;
   overflow-x: visible;
-  transition: left 3s out back;
+  transition: left 3s;
 }
 
 .menu ul a {
   /* display: block; */
 
-  border-bottom: 1px solid transparent;
+  border: 0.1rem solid #ddd;
+  border-radius: 6.25rem;
   text-transform: uppercase;
+  padding: 0.5rem;
 }
 
 .menu ul a:hover {
@@ -90,7 +92,7 @@ a {
   position: relative;
   /*   clear: both; */
   color: #ddd;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -127,6 +129,11 @@ a {
   background-size: 50%;
   background-position: center;
   cursor: pointer;
+}
+
+.menu__btn1:hover .menu__btn2:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
 }
 
 .menu-closed {
