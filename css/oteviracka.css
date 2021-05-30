@@ -1,0 +1,42 @@
+.oteviracka {
+  padding: 0.5rem;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 768px;
+}
+
+.container_tabulka {
+  min-width: 320px;
+  max-width: 768px;
+  margin: 0 auto;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: hsla(0, 0%, 80%, 0.14);
+  padding: 0.6rem;
+}
+
+.box1 {
+  display: block;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.box2 {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  height: 200px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  width: 49%;
+}
+
+.sloupec {
+  font-size: 1.8rem;
+}
