@@ -5,13 +5,8 @@
   align-items: center;
   min-width: 320px;
   max-width: 768px;
-  margin-top: 2rem;
-  padding: 0.1rem 0.3rem;
+  margin-bottom: 2rem;
   margin: 0 auto;
-}
-
-.zavreno {
-  display: none;
 }
 
 .prichut {
@@ -19,18 +14,22 @@
   text-transform: uppercase;
   align-items: center;
   color: rgb(255, 255, 255);
+  line-height: 1.5;
   font-size: 1.1rem;
   font-weight: 900;
-  border-radius: 6.25rem;
+  border-radius: 1rem;
   width: 100%;
-  padding: 0.5rem;
-  margin: 0.3rem 0rem;
-  transition: 0.3s;
+  padding: 1rem;
+  margin: 1rem 0rem;
   letter-spacing: 0.2rem;
 }
 
+.zavreno {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
-  .container {
+  .stranka {
     max-width: 960px;
   }
 }

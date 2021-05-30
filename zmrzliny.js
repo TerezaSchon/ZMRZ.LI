@@ -134,6 +134,7 @@ export const zmrzliny = [
     id: '25',
     name: 'Hrušky & rýnský ryzlink sorbet – zázvor',
     backgroundColor: '#8dc63f',
+    color: '#1B1A1A',
   },
   {
     id: '26',
@@ -148,7 +149,8 @@ export const zmrzliny = [
   {
     id: '28',
     name: 'Citron sorbet – bazalka',
-    backgroundColor: '#51b748',
+    backgroundColor: '#D3FA37',
+    color: '#1B1A1A',
   },
   {
     id: '29',

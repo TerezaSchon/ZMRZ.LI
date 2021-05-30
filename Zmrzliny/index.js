@@ -15,9 +15,9 @@ console.log();
 export const Aktualne = () => {
   const dnesZmrzli = zmrzliny.map((item) => {
     if (denVTydnu === 6 || denVTydnu === 0) {
-      datumElm.innerHTML = `<h3>O víkendu máme zavřeno, jděte na pivo a vyhlížejte pondělí :)</h3>`;
+      datumElm.innerHTML = `<h3>O víkendu máme zavřeno, jdi na pivo a vyhlížej pondělí :)</h3>`;
     } else {
-      return (aktualneElm.innerHTML += `<div class="nabidka"><li class="prichut" style="background-color: ${item.backgroundColor}; color: ${item.color}";>${item.name}</li></div>`);
+      return (aktualneElm.innerHTML += `<div class="dnesniZmrzli"><li class="prichut" style="background-color: ${item.backgroundColor}; color: ${item.color}";>${item.name}</li></div>`);
     }
   });
 };
