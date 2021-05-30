@@ -24,11 +24,14 @@ btnForwardEl.addEventListener('click', () => {
     const icecreamResult = lookUp(result);
 
     showAnswer(icecreamResult);
+    hideEl(document.querySelector('.indicator'));
+    hideEl(document.querySelector('.game-p'));
   }
 });
 
 function showAnswer(icecreamResult) {
-  document.querySelector('.js-game-g6').textContent = icecreamResult[0].name;
+  document.querySelector('.js-game-answer').textContent =
+    icecreamResult[0].name;
 }
 
 function lookUp(id) {

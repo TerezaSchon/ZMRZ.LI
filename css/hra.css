@@ -5,7 +5,8 @@ h3 {
   color: rgb(211, 211, 206);
   padding: 1rem;
 }
-.game-p {
+.game-p,
+.game-text {
   text-align: center;
   color: hsl(0, 0%, 90%);
   background-color: hsla(0, 0%, 80%, 0.1);
@@ -84,9 +85,8 @@ h3 {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
-  padding: 0.8rem 1rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 0.5rem;
-  transition: 0.4s;
   background-color: hsla(0, 0%, 80%, 0.1);
 }
 
@@ -109,7 +109,7 @@ h3 {
   height: 1.4rem;
   background: hsl(0, 0%, 90%);
   border: none;
-  border-radius: 6.25rem;
+  border-radius: 0.5rem;
   transform: scale(1.1);
   transition: 0.3s;
   cursor: pointer;
@@ -137,14 +137,6 @@ img.logo {
   justify-content: center;
   height: inherit;
 }
-.game-f {
-  margin: 1rem;
-  /*   border-radius: 0.5rem;
-  background: hsla(0, 0%, 80%, 0.14); */
-  border-radius: 6.25rem;
-  padding: 0.6rem;
-}
-
 .hide {
   display: none;
 }
