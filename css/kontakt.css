@@ -43,10 +43,36 @@ html {
 #ikona-telefon,
 #ikona-email,
 #ikona-chat {
-  width: 1.2rem;
+  width: 2rem;
   font-weight: bolder;
-  margin: 2px;
+  margin-right: 1rem;
   filter: invert(100%);
+  align-content: center;
+}
+
+.kontakt__adresa,
+.kontakt__gps,
+.kontakt__telefon,
+.kontakt__mail,
+.kontakt__fb {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  text-decoration: none;
+  text-align: start;
+  margin: 1rem;
+}
+
+.kontakt__adresa--text,
+.kontakt__gps--text,
+.kontakt__telefon--text,
+.kontakt__mail--text,
+.kontakt__fb--text {
+  color: #eb284c;
+}
+
+.gps:active {
+  color: cornflowerblue;
 }
 
 /* body {
