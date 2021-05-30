@@ -42,7 +42,8 @@ html {
 #ikona-spendlik,
 #ikona-telefon,
 #ikona-email,
-#ikona-chat {
+#ikona-chat,
+#ikona-hodiny {
   width: 2rem;
   font-weight: bolder;
   margin-right: 1rem;
@@ -50,11 +51,23 @@ html {
   align-content: center;
 }
 
+#ikona-ruka {
+  width: 2rem;
+  height: 1.3rem;
+  filter: invert(100%);
+  padding-bottom: 0;
+}
+
+#ikona-ruka:hover {
+  color: #eb284c;
+}
+
 .kontakt__adresa,
 .kontakt__gps,
 .kontakt__telefon,
 .kontakt__mail,
-.kontakt__fb {
+.kontakt__fb,
+.kontakt__oteviracka {
   display: flex;
   flex-direction: row;
   justify-items: center;
@@ -67,7 +80,8 @@ html {
 .kontakt__gps--text,
 .kontakt__telefon--text,
 .kontakt__mail--text,
-.kontakt__fb--text {
+.kontakt__fb--text,
+.kontakt__oteviracka--text {
   color: #eb284c;
 }
 
