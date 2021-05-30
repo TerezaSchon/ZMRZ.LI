@@ -121,9 +121,16 @@ h3 {
   pointer-events: none;
 }
 
-img {
+.js-btn-forward img {
   height: 100%;
   appearance: none;
+  transform: rotate(90deg);
+}
+
+.js-btn-back img {
+  height: 100%;
+  appearance: none;
+  transform: rotate(-90deg);
 }
 
 img.logo {

@@ -22,12 +22,13 @@ btnForwardEl.addEventListener('click', () => {
 
     const result = results(allValues);
     const icecreamResult = lookUp(result);
+
     showAnswer(icecreamResult);
   }
 });
 
 function showAnswer(icecreamResult) {
-  document.querySelector('.game-text').textContent = icecreamResult.name;
+  document.querySelector('.js-game-g6').textContent = icecreamResult[0].name;
 }
 
 function lookUp(id) {
@@ -48,7 +49,7 @@ function results(allValues) {
       numbersOfAnswers[answer] += 1;
     }
   });
-  console.log(numbersOfAnswers);
+  /*   console.log(numbersOfAnswers); */
   let maxCount = 0;
   let maxIndex = '';
 
@@ -89,7 +90,7 @@ function setCurrentQuestion(question) {
 
 function setQestionIndicator(num) {
   const indicatorEl = document.querySelector('.js-q-indicator');
-  indicatorEl.textContent = `${num}/6`;
+  indicatorEl.textContent = `${num}`;
 }
 
 function checkedItemsFilter(inputEls) {
