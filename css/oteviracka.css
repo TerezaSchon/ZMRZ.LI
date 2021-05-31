@@ -9,8 +9,6 @@
   margin: 3rem 0rem;
   padding: 1rem;
   align-items: center;
-  border-radius: 0.5rem;
-  background: hsla(0, 0%, 80%, 0.14);
 }
 
 .box1 {
@@ -22,7 +20,6 @@
 
 .box2 {
   display: flex;
-  align-content: center;
   min-width: 100%;
   height: 100px;
 }
@@ -30,13 +27,14 @@
 .box {
   display: flex;
   flex-direction: column;
-  width: 48%;
-  align-items: center;
+  width: calc(100% - 5px);
   align-self: center;
 }
 
 .sloupec {
-  font-size: 1.8rem;
-  align-items: center;
-  align-self: center;
+  font-size: 2rem;
+}
+
+.oteviracka p {
+  text-align: center;
 }
