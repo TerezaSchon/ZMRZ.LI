@@ -1,18 +1,16 @@
 .oteviracka {
-  padding: 0.5rem;
   margin: 0 auto;
   min-width: 320px;
   max-width: 768px;
+  min-height: 100%;
 }
 
 .container_tabulka {
-  min-width: 320px;
-  max-width: 768px;
-  margin: 0 auto;
+  margin: 3rem 0rem;
+  padding: 1rem;
   align-items: center;
   border-radius: 0.5rem;
   background: hsla(0, 0%, 80%, 0.14);
-  padding: 0.6rem;
 }
 
 .box1 {
@@ -25,18 +23,20 @@
 .box2 {
   display: flex;
   align-content: center;
-  width: 100%;
-  height: 200px;
+  min-width: 100%;
+  height: 100px;
 }
 
 .box {
   display: flex;
   flex-direction: column;
+  width: 48%;
   align-items: center;
   align-self: center;
-  width: 49%;
 }
 
 .sloupec {
   font-size: 1.8rem;
+  align-items: center;
+  align-self: center;
 }

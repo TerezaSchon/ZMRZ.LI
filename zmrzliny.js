@@ -10,7 +10,7 @@ export const zmrzliny = [
     id: '1',
     name: 'Slaný karamel',
     backgroundColor: '#ee7b22',
-    naCepu: 'ano',
+    naCepu: 'ne',
   },
   {
     id: '2',
@@ -29,13 +29,13 @@ export const zmrzliny = [
     id: '4',
     name: 'Mléčný čokoládový shake',
     backgroundColor: '#754c29',
-    naCepu: 'ano',
+    naCepu: 'ne',
   },
   {
     id: '5',
     name: 'Banán – arašídovo slaninová směs',
     backgroundColor: '#f7941d',
-    naCepu: 'ano',
+    naCepu: 'ne',
   },
   {
     id: '6',
@@ -59,7 +59,7 @@ export const zmrzliny = [
     id: '9',
     name: 'Masala čaj',
     backgroundColor: '#e12b27',
-    naCepu: 'ano',
+    naCepu: 'ne',
   },
   {
     id: '10',
@@ -153,7 +153,7 @@ export const zmrzliny = [
     id: '24',
     name: 'Pomerančový sorbet – šafrán',
     backgroundColor: '#f15a29',
-    naCepu: 'ne',
+    naCepu: 'ano',
   },
   {
     id: '25',
@@ -185,7 +185,7 @@ export const zmrzliny = [
     id: '29',
     name: 'Maliny – šampaňské sorbet',
     backgroundColor: '#eb284c',
-    naCepu: 'ne',
+    naCepu: 'ano',
   },
 ];
 

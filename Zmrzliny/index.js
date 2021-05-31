@@ -19,13 +19,3 @@ export const Aktualne = () => {
     }
   });
 };
-
-// export const jeNaCepu = () => {
-//   const dnesZmrzli = zmrzliny.map((item) => {
-//     if (denVTydnu !== 6 && item.naCepu === true) {
-//       return (aktualneElm.innerHTML += `<div class="dnesniZmrzli"><li class="prichut" style="background-color: ${item.backgroundColor}; color: ${item.color}";>${item.name}</li></div>`);
-//     } else {
-//       aktualneElm.innerHTML = `<h3>O víkendu máme zavřeno, jdi na pivo a vyhlížej pondělí :)</h3>`;
-//     }
-//   });
-// };

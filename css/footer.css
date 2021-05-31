@@ -4,17 +4,14 @@
   min-width: 320px;
   max-width: 768px;
   min-height: 5rem;
+  width: 100%;
   margin: 0 auto;
 }
 
-.copyright {
-  margin-top: 1rem;
-}
-
 .pozadi__sipky-footer {
+  display: block;
   position: absolute;
   bottom: 0rem;
-  display: block;
   height: 2rem;
   width: 100%;
   background-image: url('../img_podklady/sipky_pozadi.svg');
