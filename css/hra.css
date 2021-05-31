@@ -29,7 +29,7 @@ h3 {
   margin: auto;
   width: fit-content;
   color: hsl(0, 0%, 90%);
-  background-color: #eb284c;
+  background-color: hsl(349, 83%, 54%);
   padding: 0.7rem;
   border-radius: 6.25rem;
 }
@@ -65,7 +65,7 @@ h3 {
   border-radius: 50%;
   background: linear-gradient(
     to right bottom,
-    hsl(0, 91%, 55%),
+    hsl(349, 96%, 66%),
     hsl(0, 60%, 35%)
   );
 }
@@ -95,7 +95,7 @@ h3 {
 }
 
 .radio-input:checked ~ .radio-text {
-  color: hsl(0, 91%, 55%);
+  color: hsl(349, 96%, 66%);
 }
 
 .arrowed {
@@ -115,7 +115,7 @@ h3 {
   border: none;
   background: linear-gradient(
     to right bottom,
-    hsl(0, 91%, 55%),
+    hsl(349, 96%, 66%),
     hsl(0, 60%, 35%)
   );
   transition: 0.3s;
@@ -158,5 +158,5 @@ img.logo {
   display: none;
 }
 .one {
-  color: hsl(0, 91%, 55%);
+  color: hsl(349, 96%, 66%);
 }
