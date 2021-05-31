@@ -18,6 +18,7 @@
 }
 
 .mapa-CB {
+  filter: invert(90%);
   display: block;
   width: 80%;
   border-radius: 0.5rem;
