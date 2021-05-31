@@ -5,10 +5,13 @@ h3 {
   color: rgb(211, 211, 206);
   padding: 1rem;
 }
+.game-h3 {
+  border-bottom: azure 1px solid;
+}
 .cont-game {
   min-width: 320px;
   max-width: 768px;
-  margin: auto;
+  margin: auto 1rem;
   align-items: center;
   border-radius: 0.5rem;
   background: hsla(0, 0%, 80%, 0.14);
@@ -26,21 +29,26 @@ h3 {
   color: hsl(0, 0%, 90%);
   padding: 0.6rem;
   border-radius: 0.5rem;
+  border-radius: 6.25rem;
 }
 .game-nabidka {
   margin: auto;
+  margin-top: 2rem;
   width: fit-content;
   color: hsl(0, 0%, 90%);
-  background-color: hsl(349, 83%, 54%);
   padding: 0.7rem;
   border-radius: 6.25rem;
+  border: hsl(0, 0%, 90%) 1px solid;
 }
 
+.item:hover {
+  color: hsl(349, 96%, 66%);
+}
 .game-answer {
   text-align: center;
   border-radius: 6.25rem;
   padding: 0.8rem 1rem;
-  margin: 0.6rem 0rem;
+  margin: 0.6rem 1rem;
 }
 .radio-label {
   display: flex;
