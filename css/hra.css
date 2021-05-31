@@ -16,8 +16,10 @@ h3 {
 .game-p {
   text-align: center;
   background: hsla(0, 0%, 80%, 0.14);
-  padding: 0.6rem;
+  padding: 2rem;
   border-radius: 0.5rem;
+  line-height: 1.5;
+  font-size: 1.2rem;
 }
 .game-text {
   text-align: center;

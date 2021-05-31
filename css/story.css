@@ -1,7 +1,9 @@
 .story_text {
   margin: 3rem 0rem;
   padding: 2rem;
-  text-align: justify;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  text-align: left;
   border-radius: 0.5rem;
   background: hsla(0, 0%, 80%, 0.14);
 }
