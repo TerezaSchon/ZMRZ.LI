@@ -4,9 +4,9 @@
 <svg
    version="1.1"
    id="svg856"
-   width="802.56"
-   height="606.71997"
-   viewBox="0 0 802.56 606.71997"
+   width="677.59052"
+   height="613.27911"
+   viewBox="0 0 677.59052 613.27911"
    sodipodi:docname="mapa_verze3.svg"
    inkscape:version="1.1 (c4e8f9e, 2021-05-24)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -16,8 +16,8 @@
   <defs
      id="defs860">
     <rect
-       x="50.616927"
-       y="544.23006"
+       x="50.616928"
+       y="544.23004"
        width="93.778648"
        height="31.782722"
        id="rect112918" />
@@ -32,8 +32,8 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="0.64229333"
-     inkscape:cx="387.67334"
-     inkscape:cy="350.30723"
+     inkscape:cx="386.89488"
+     inkscape:cy="351.86416"
      inkscape:window-width="1440"
      inkscape:window-height="934"
      inkscape:window-x="0"
@@ -43,7 +43,8 @@
   <g
      inkscape:groupmode="layer"
      inkscape:label="Image"
-     id="g862">
+     id="g862"
+     transform="translate(-1.9084584,2.0803225)">
     <path
        style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="path1786"
