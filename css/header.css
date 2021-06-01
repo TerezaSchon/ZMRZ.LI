@@ -25,14 +25,13 @@
 }
 /* nadpis */
 h1 {
-  width: 85%;
   margin: 0;
   margin-left: 1rem;
 }
+
 .tecka {
   color: #eb284c;
 }
-
 /* nav {
   min-width: 320px;
   max-width: 768px;

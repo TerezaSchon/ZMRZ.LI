@@ -31,7 +31,7 @@ btnForwardEl.addEventListener('click', () => {
 
 function showAnswer(icecreamResult) {
   const gameAnswerElm = document.querySelector('.js-game-answer');
-  gameAnswerElm.textContent = icecreamResult[0].name;
+  gameAnswerElm.textContent = icecreamResult[0].name.toUpperCase();
   gameAnswerElm.style.backgroundColor = icecreamResult[0].backgroundColor;
   gameAnswerElm.style.color = icecreamResult[0].color;
 }
