@@ -50,3 +50,12 @@ closeMenu4.addEventListener('click', () => {
   menu.classList.add('menu-closed');
 });
  */
+
+// if you're using a bundler, first import:
+// import Headroom from './headroom.min.js';
+// grab an element
+const myElement = document.querySelector('.header-hlavni');
+// construct an instance of Headroom, passing the element
+const headroom = new Headroom(myElement);
+// initialise
+headroom.init();
