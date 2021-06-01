@@ -155,3 +155,22 @@ a {
   transition: 0.3s;
   transform: scale(1.1);
 }
+/* 
+.headroom--not-bottom .headroom--not-top  */
+
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear;
+}
+
+.headroom--unpinned {
+  transition: 0.5s;
+  transform: translateY(-100%);
+}
+
+.headroom--pinned {
+  /* position: fixed; */
+  /* visibility: visible; */
+  transition: 0.5s;
+  transform: translateY(0%);
+}
