@@ -98,7 +98,7 @@ a {
   /* display: block; */
 
   border: 0.1rem solid #ddd;
-  border-radius: 6.25rem;
+  border-radius: 1rem;
   text-transform: uppercase;
   padding: 0.5rem;
 }
