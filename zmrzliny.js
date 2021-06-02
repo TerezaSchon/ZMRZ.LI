@@ -17,13 +17,13 @@ export const zmrzliny = [
     name: 'Bezinka',
     backgroundColor: '#dfc07d',
     color: '#1B1A1A',
-    naCepu: 'ano',
+    naCepu: 'ne',
   },
   {
     id: '3',
     name: 'Tmavá čokoláda – uzená sůl',
     backgroundColor: '#3c2415',
-    naCepu: 'ano',
+    naCepu: 'ne',
   },
   {
     id: '4',
@@ -41,7 +41,7 @@ export const zmrzliny = [
     id: '6',
     name: 'Bourbon – sušenky z kukuřičných lupínků',
     backgroundColor: '#2b3990',
-    naCepu: 'ano',
+    naCepu: 'ne',
   },
   {
     id: '7',
@@ -53,7 +53,7 @@ export const zmrzliny = [
     id: '8',
     name: 'Oolong čaj',
     backgroundColor: '#71732f',
-    naCepu: 'ano',
+    naCepu: 'ne',
   },
   {
     id: '9',
@@ -96,7 +96,7 @@ export const zmrzliny = [
     id: '15',
     name: 'Borůvky v řeckém jogurtu – levandule',
     backgroundColor: '#4c2d85',
-    naCepu: 'ne',
+    naCepu: 'ano',
   },
   {
     id: '16',
@@ -153,7 +153,7 @@ export const zmrzliny = [
     id: '24',
     name: 'Pomerančový sorbet – šafrán',
     backgroundColor: '#f15a29',
-    naCepu: 'ano',
+    naCepu: 'ne',
   },
   {
     id: '25',
@@ -166,7 +166,7 @@ export const zmrzliny = [
     id: '26',
     name: 'Merlot & cola sorbet',
     backgroundColor: '#601d25',
-    naCepu: 'ne',
+    naCepu: 'ano',
   },
   {
     id: '27',
@@ -179,7 +179,7 @@ export const zmrzliny = [
     name: 'Citron sorbet – bazalka',
     backgroundColor: '#D3FA37',
     color: '#1B1A1A',
-    naCepu: 'ne',
+    naCepu: 'ano',
   },
   {
     id: '29',

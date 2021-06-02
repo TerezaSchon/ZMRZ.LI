@@ -11,14 +11,10 @@ h3 {
 .cont-game {
   min-width: 320px;
   max-width: 768px;
-  margin: auto 1rem;
-  align-items: center;
   border-radius: 0.5rem;
-  background: hsla(0, 0%, 80%, 0.14);
 }
 .game-p {
   text-align: center;
-  background: hsla(0, 0%, 80%, 0.14);
   padding: 2rem;
   border-radius: 0.5rem;
   line-height: 1.5;
@@ -61,7 +57,7 @@ h3 {
 
 .radio-label:hover,
 .radio-label:focus-within {
-  background: hsla(0, 0%, 80%, 0.14);
+  color: hsl(349, 96%, 66%);
 }
 
 .radio-input {
@@ -69,8 +65,8 @@ h3 {
 }
 
 .radio-design {
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   background: linear-gradient(
     to right bottom,
@@ -131,8 +127,8 @@ h3 {
   transform: scale(1.1);
 }
 .btn-design {
-  width: 3rem;
-  height: 1.4rem;
+  width: 4rem;
+  height: 2rem;
   background: hsl(0, 0%, 90%);
   border: none;
   border-radius: 0.5rem;

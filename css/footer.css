@@ -20,6 +20,10 @@
   background-size: auto 100%;
 }
 
+.copyright {
+  background-color: hsla(0, 0%, 80%, 0.14);
+}
+
 .footer-cervena {
   color: #fc5372;
 }

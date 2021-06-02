@@ -12,11 +12,7 @@
 } */
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-width: 320px;
-  max-width: 768px;
-  margin: auto;
+  margin: 0;
   background-color: #252729;
   color: white;
   font-family: 'Montserrat';
@@ -26,21 +22,21 @@ body {
 
 h2 {
   font-size: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 h3 {
   font-size: 1.5rem;
 }
 
-.stranka {
+.sekce_spolecne {
   background-color: rgb(26, 26, 26);
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  min-width: 320px;
-  max-width: 768px;
-  min-height: fit-content;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+  width: 100vw;
 }
+
 .stranka_footer {
   background-color: rgb(26, 26, 26);
   min-width: 320px;
@@ -67,6 +63,10 @@ h3 {
 }
 
 @media only screen and (min-width: 900px) {
+  .sekce_spolecne {
+    max-width: 768px;
+  }
+
   h1 {
     font-size: 3rem;
   }
