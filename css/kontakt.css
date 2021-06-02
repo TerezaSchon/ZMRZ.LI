@@ -7,6 +7,7 @@
   min-width: 320px;
   max-width: 768px;
   min-height: 100%;
+  padding: 1rem;
 }
 
 .kontakt__obrazek {
@@ -24,6 +25,7 @@
   border-radius: 0.5rem;
   border: solid rgb(73, 73, 73) 0.3rem;
   margin: auto;
+  margin-bottom: 2rem;
 }
 
 #ikona-mapa,

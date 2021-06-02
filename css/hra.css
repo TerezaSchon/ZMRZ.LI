@@ -28,8 +28,7 @@ h3 {
   text-align: center;
   color: hsl(0, 0%, 90%);
   padding: 0.6rem;
-  border-radius: 0.5rem;
-  border-radius: 6.25rem;
+  border-radius: 1rem;
 }
 .game-nabidka {
   margin: auto;
@@ -37,7 +36,7 @@ h3 {
   width: fit-content;
   color: hsl(0, 0%, 90%);
   padding: 0.7rem;
-  border-radius: 6.25rem;
+  border-radius: 1rem;
   border: hsl(0, 0%, 90%) 1px solid;
 }
 
@@ -46,7 +45,7 @@ h3 {
 }
 .game-answer {
   text-align: center;
-  border-radius: 6.25rem;
+  border-radius: 1rem;
   padding: 0.8rem 1rem;
   margin: 0.6rem 1rem;
 }

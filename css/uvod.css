@@ -13,15 +13,11 @@
   width: 75%;
 }
 
-h2 {
-  margin: 0;
-}
-
 .btn-na-cepu {
   background-color: #eb284c;
+  position: relative;
   color: white;
   text-transform: uppercase;
-  border: solid #252729 1px;
   border-radius: 1rem;
   padding: 1.5rem;
   margin: 1.5rem;

@@ -26,6 +26,7 @@ body {
 
 h2 {
   font-size: 2rem;
+  padding-bottom: 2rem;
 }
 
 h3 {
@@ -49,7 +50,6 @@ h3 {
 
 .stranka_home {
   background-color: rgb(26, 26, 26);
-  min-width: 320px;
   max-width: 768px;
   min-height: fit-content;
   padding-bottom: 3rem;
@@ -60,13 +60,37 @@ h3 {
   max-width: 768px;
   height: 2rem;
   background-image: url('../img_podklady/sipky_pozadi.svg');
+  background-color: #e5e5e5;
   filter: invert(100%);
   background-repeat: repeat-x;
   background-size: auto 100%;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   h1 {
     font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .logo-uvod {
+    max-width: 60%;
+  }
+
+  .stranka {
+    padding: 3rem;
+  }
+
+  .story_text {
+    margin: 3rem 0rem;
   }
 }
