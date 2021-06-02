@@ -6,9 +6,7 @@
   min-width: 320px;
   max-width: 768px;
   margin: 0 auto;
-  height: calc(
-    100% - 7rem
-  ); /* 100% obrazovky a od toho odečtena výška headeru */
+  padding-top: 7.2rem;
 }
 
 .logo-uvod {
