@@ -24,9 +24,9 @@
   top: 0;
   left: 0;
   /*  height: 3rem; */
-  width: 100vw;
+  width: 100%;
   align-items: center;
-  background-color: #252729;
+  background-color: rgb(26, 26, 26);
   z-index: 30;
 }
 /* nadpis */

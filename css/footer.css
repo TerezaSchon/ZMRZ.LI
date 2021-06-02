@@ -1,11 +1,13 @@
 .footer {
   position: relative;
-  background-color: hsla(0, 0%, 80%, 0.14);
+  background-color: rgb(26, 26, 26);
   min-width: 320px;
   max-width: 768px;
-  min-height: 5rem;
+  min-height: 3.5rem;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 .pozadi__sipky-footer {
@@ -18,10 +20,6 @@
   filter: invert(100%);
   background-repeat: repeat-x;
   background-size: auto 100%;
-}
-
-.copyright {
-  background-color: hsla(0, 0%, 80%, 0.14);
 }
 
 .footer-cervena {

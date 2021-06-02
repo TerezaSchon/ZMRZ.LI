@@ -2,6 +2,10 @@
 /*  top: 0;
   left: 0; */
 
+/* position: absolute; */
+/*  top: 0;
+  left: 0; */
+
 .kontakty {
   margin: 0 auto;
   min-width: 320px;
@@ -19,7 +23,7 @@
 .mapa-CB {
   filter: invert(90%);
   display: block;
-  width: 80%;
+  width: calc(100% - 4rem);
   border-radius: 0.5rem;
   border: solid rgb(73, 73, 73) 0.3rem;
   margin: auto;
@@ -69,6 +73,14 @@
   text-align: start;
   margin: 0;
 }
+.kontakt__fb {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  text-decoration: none;
+  text-align: start;
+  padding-bottom: 3rem;
+}
 
 .kontakt__adresa--text,
 .kontakt__gps--text,
@@ -88,24 +100,20 @@
 }
 
 /* body {
-  /*   font-family:  
-    background-color: 
-  display: flex;
-  min-width: 320px;
-  max-width: 768px;
-  font-family: Montserrat;
-  font-size: 1.5rem;
-  background-color: #1c1b1b;
-  color: white;
-  width: 100vw;
-} */
+    /*   font-family:  
+      background-color: 
+    display: flex;
+    min-width: 320px;
+    max-width: 768px;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    background-color: #1c1b1b;
+    color: white;
+    width: 100vw;
+  } */
 
 /* 
-
-
-
-
-
+  
 
 
 

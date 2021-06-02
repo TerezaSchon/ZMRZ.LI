@@ -15,7 +15,6 @@ h3 {
 }
 .game-p {
   text-align: center;
-  padding: 2rem;
   border-radius: 0.5rem;
   line-height: 1.5;
   font-size: 1.2rem;
@@ -48,16 +47,17 @@ h3 {
 .radio-label {
   display: flex;
   align-items: center;
-  border-radius: 6.25rem;
-  padding: 0.8rem 1rem;
-  margin: 0.6rem 0rem;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  margin: 1rem;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .radio-label:hover,
 .radio-label:focus-within {
-  color: hsl(349, 96%, 66%);
+  background: hsla(0, 0%, 80%, 0.14);
+  padding: 1rem;
 }
 
 .radio-input {
