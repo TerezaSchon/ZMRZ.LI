@@ -1,3 +1,18 @@
+export const gameResultText = {
+  headline: ['KASKADÉR', 'ROMANTIK', 'SARKASTIK', 'EZOTERIK', 'PÁRTYGIRL/BOY'],
+  message: [
+    'Nebojíš se výzev, ani ostřejších chutí, vyber si tu nejbláznivější kombinaci a vrhni se do ní po hlavě. Tak jako to děláš vždycky:-) Podráždi chuťový pohárky třeba touhle:',
+
+    'Nevrháš se do divokých kombinací, radši jedeš tak trochu na jistotu, easy, slowly… Zmrz.linu si nepotřebuješ dát proto, aby ses rozptýlil, ale aby pohladila tvoji jemnou duši. Tak co zkusit tuhle?',
+
+    'Nad frajery s klasickou točenou hnědkou se ušklíbáš, stejně jako nad půlkou světa. Pro ostřejší slovo nejdeš daleko, pro ostřejší zmrz.linu to máš taky jenom kousek:',
+
+    'Vnitřní pohoda a harmonie, utečení do jiných světů… K tomu, aby ses v nich mohl zdržet, ti pomůže ta pravá kombinace chutí provoněná trochou orientu. A zenový stav je tu:',
+
+    'Horký léto plný večírků a pártošek - nesmí chybět zmrzlina, ani dobrý drinky. Než se pustíš do koktejlu, nech si namixovat parádní uvolněnou zmrz.linu, naladí tě na zbytek večera. Čekuj, co se bude dít dál...',
+  ],
+};
+
 export const zmrzliny = [
   {
     id: '0',
@@ -5,6 +20,7 @@ export const zmrzliny = [
     backgroundColor: '#fff200',
     color: '#1B1A1A',
     naCepu: 'ano',
+    resultText: 4,
   },
   {
     id: '1',
@@ -24,6 +40,7 @@ export const zmrzliny = [
     name: 'Tmavá čokoláda – uzená sůl',
     backgroundColor: '#3c2415',
     naCepu: 'ne',
+    resultText: 0,
   },
   {
     id: '4',
@@ -36,42 +53,50 @@ export const zmrzliny = [
     name: 'Banán – arašídovo slaninová směs',
     backgroundColor: '#f7941d',
     naCepu: 'ne',
+    resultText: 2,
   },
   {
     id: '6',
     name: 'Bourbon – sušenky z kukuřičných lupínků',
     backgroundColor: '#2b3990',
     naCepu: 'ne',
+    resultText: 4,
   },
   {
     id: '7',
     name: 'Káva arabica',
     backgroundColor: '#8b5e3c',
     naCepu: 'ano',
+    resultText: 2,
   },
   {
     id: '8',
     name: 'Oolong čaj',
     backgroundColor: '#71732f',
     naCepu: 'ne',
+    resultText: 3,
   },
   {
     id: '9',
     name: 'Masala čaj',
     backgroundColor: '#e12b27',
     naCepu: 'ne',
+    headline: 3,
+    resultText: 3,
   },
   {
     id: '10',
     name: 'Černé pivo',
     backgroundColor: '#231f20',
     naCepu: 'ne',
+    resultText: 0,
   },
   {
     id: '11',
     name: 'Med – grahamové sušenky',
     backgroundColor: '#f79441',
     naCepu: 'ne',
+    resultText: 4,
   },
   {
     id: '12',
@@ -91,12 +116,14 @@ export const zmrzliny = [
     name: 'Pražená bílá čokoláda – levandule',
     backgroundColor: '#7f3f98',
     naCepu: 'ne',
+    resultText: 1,
   },
   {
     id: '15',
     name: 'Borůvky v řeckém jogurtu – levandule',
     backgroundColor: '#4c2d85',
     naCepu: 'ano',
+    resultText: 1,
   },
   {
     id: '16',
@@ -117,12 +144,14 @@ export const zmrzliny = [
     backgroundColor: '#cbd63f',
     color: '#1B1A1A',
     naCepu: 'ne',
+    resultText: 3,
   },
   {
     id: '19',
     name: 'Máta & pepř – kousky čokolády',
     backgroundColor: '#00a79d',
     naCepu: 'ne',
+    resultText: 2,
   },
   {
     id: '20',
@@ -132,9 +161,10 @@ export const zmrzliny = [
   },
   {
     id: '21',
-    name: 'Smetanový sýr – ostružinový vír',
+    name: 'Smetanový sýr – ostružinová spirála',
     backgroundColor: '#40016b',
     naCepu: 'ne',
+    resultText: 1,
   },
   {
     id: '22',
@@ -142,6 +172,7 @@ export const zmrzliny = [
     backgroundColor: '#dfc07d',
     color: '#1B1A1A',
     naCepu: 'ne',
+    resultText: 1,
   },
   {
     id: '23',
@@ -154,6 +185,7 @@ export const zmrzliny = [
     name: 'Pomerančový sorbet – šafrán',
     backgroundColor: '#f15a29',
     naCepu: 'ne',
+    resultText: 3,
   },
   {
     id: '25',
@@ -161,6 +193,7 @@ export const zmrzliny = [
     backgroundColor: '#8dc63f',
     color: '#1B1A1A',
     naCepu: 'ne',
+    resultText: 2,
   },
   {
     id: '26',
@@ -173,6 +206,7 @@ export const zmrzliny = [
     name: 'Kokos & limetka sorbet – chilli',
     backgroundColor: '#00a14b',
     naCepu: 'ne',
+    resultText: 0,
   },
   {
     id: '28',
@@ -180,12 +214,14 @@ export const zmrzliny = [
     backgroundColor: '#D3FA37',
     color: '#1B1A1A',
     naCepu: 'ano',
+    resultText: 0,
   },
   {
     id: '29',
     name: 'Maliny – šampaňské sorbet',
     backgroundColor: '#eb284c',
     naCepu: 'ano',
+    resultText: 4,
   },
 ];
 

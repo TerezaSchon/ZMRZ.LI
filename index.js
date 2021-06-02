@@ -1,4 +1,4 @@
-import { gameAnswers, zmrzliny } from './zmrzliny.js';
+import { gameAnswers, zmrzliny, gameResultText } from './zmrzliny.js';
 
 const btnForwardEl = document.querySelector('.js-btn-forward');
 const btnBackEl = document.querySelector('.js-btn-back');
@@ -30,6 +30,13 @@ btnForwardEl.addEventListener('click', () => {
 });
 
 function showAnswer(icecreamResult) {
+  const headAnswerElm = document.querySelector('.js-result-head');
+  const messqgeAnswerElm = document.querySelector('.js-result-text');
+  headAnswerElm.textContent =
+    gameResultText.headline[icecreamResult[0].resultText];
+  messqgeAnswerElm.textContent =
+    gameResultText.message[icecreamResult[0].resultText];
+
   const gameAnswerElm = document.querySelector('.js-game-answer');
   gameAnswerElm.textContent = icecreamResult[0].name.toUpperCase();
   gameAnswerElm.style.backgroundColor = icecreamResult[0].backgroundColor;
