@@ -18,10 +18,16 @@
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 3.1rem;
-  min-width: 320px;
-  max-width: 768px;
-  position: relative;
+  /*  min-width: 320px;
+  max-width: 768px; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*  height: 3rem; */
+  width: 100vw;
   align-items: center;
+  background-color: #252729;
+  z-index: 30;
 }
 /* nadpis */
 h1 {
