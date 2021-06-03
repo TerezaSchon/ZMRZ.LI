@@ -8,15 +8,15 @@
 
 .kontakty {
   margin: 0 auto;
-  min-width: 320px;
-  max-width: 768px;
+  min-width: 20rem;
+  max-width: 48rem;
 }
 
 .kontakt__obrazek {
   padding: 0.5rem;
   margin: 0 auto;
-  min-width: 320px;
-  max-width: 768px;
+  min-width: 20rem;
+  max-width: 48rem;
   min-height: 100%;
 }
 
