@@ -156,8 +156,9 @@ h3 {
   transform: rotate(-90deg);
 }
 
-img.logo {
+.logo {
   width: 5rem;
+  margin: auto;
 }
 .hide {
   display: none;
