@@ -5,6 +5,10 @@
   min-height: 100%;
 }
 
+h3.datum {
+  padding-top: 0;
+}
+
 .dostupne_ano {
   list-style: none;
   text-transform: uppercase;

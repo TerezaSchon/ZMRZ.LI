@@ -2,6 +2,7 @@ import { gameAnswers, zmrzliny, gameResultText } from './zmrzliny.js';
 
 const btnForwardEl = document.querySelector('.js-btn-forward');
 const btnBackEl = document.querySelector('.js-btn-back');
+const arrowedEl = document.querySelector('.arrowed');
 
 btnForwardEl.addEventListener('click', () => {
   const currentQ = getCurrentQuestion();
@@ -10,6 +11,7 @@ btnForwardEl.addEventListener('click', () => {
   if (getCurrentQuestion() === 6) {
     hideEl(btnBackEl);
     hideEl(btnForwardEl);
+    hideEl(arrowedEl);
     const answers = getAllAnswers();
     const values1 = gameAnswers[answers[0][0]][answers[0][1]];
     const values2 = gameAnswers[answers[1][0]][answers[1][1]];
