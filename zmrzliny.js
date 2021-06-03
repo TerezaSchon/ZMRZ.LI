@@ -220,6 +220,13 @@ export const zmrzliny = [
     id: '29',
     name: 'Maliny – šampaňské sorbet',
     backgroundColor: '#eb284c',
+    naCepu: 'ne',
+  },
+
+  {
+    id: '30',
+    name: 'Červené hrozno',
+    backgroundColor: '#B13261',
     naCepu: 'ano',
     resultText: 4,
   },
