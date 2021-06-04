@@ -18,13 +18,14 @@
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 3.1rem;
+  padding-bottom: 1rem;
   /*  min-width: 320px;
   max-width: 768px; */
   position: fixed;
   top: 0;
   left: 0;
   /*  height: 3rem; */
-  width: 100%;
+  width: 100vw;
   align-items: center;
   background-color: rgb(26, 26, 26);
   z-index: 30;
@@ -48,7 +49,7 @@ h1 {
   position: fixed;
   top: 0;
   right: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   line-height: 4rem;
   background-color: #252729;
