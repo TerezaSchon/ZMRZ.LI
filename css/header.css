@@ -67,9 +67,9 @@ h1 {
 .menu-opened {
   transform: translateX(0%);
   transition: transform 1s ease;
-  /* overflow-y: scroll;
-  overflow-x: visible;
-  transition: left 3s out back; */
+  overflow: auto;
+  /* overflow-x: visible;
+  transition: left 3s out back;  */
 }
 
 .menu nav {
