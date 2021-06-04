@@ -9,7 +9,7 @@ export const gameResultText = {
 
     'Vnitřní pohoda a harmonie, utečení do jiných světů… K tomu, aby ses v nich mohl zdržet, ti pomůže ta pravá kombinace chutí provoněná trochou orientu. A zenový stav je tu:',
 
-    'Horký léto plný večírků a pártošek - nesmí chybět zmrzlina, ani dobrý drinky. Než se pustíš do koktejlu, nech si namixovat parádní uvolněnou zmrz.linu, naladí tě na zbytek večera. Čekuj, co se bude dít dál...',
+    'Horký léto plný večírků a pártošek – nesmí chybět zmrzlina, ani dobrý drinky. Než se pustíš do koktejlu, nech si namixovat parádní uvolněnou zmrz.linu, naladí tě na zbytek večera. Čekuj, co se bude dít dál...',
   ],
 };
 
