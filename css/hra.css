@@ -3,10 +3,10 @@ h3 {
   text-transform: uppercase;
   text-align: center;
   color: rgb(211, 211, 206);
-  padding: 1rem;
 }
 .game-h3 {
   border-bottom: azure 1px solid;
+  padding-bottom: 1rem;
 }
 .cont-game {
   min-width: 320px;
