@@ -5,6 +5,7 @@
   flex-direction: column;
   align-content: center;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
 .story_obrazek {
@@ -16,8 +17,7 @@
   padding: 0;
 }
 
-.story_text {
-  margin: 1rem 0rem;
+p.story_text {
   padding: 0 2rem;
   margin-block-end: 0rem;
   line-height: 1.5;

@@ -45,7 +45,7 @@
 
 .ikona {
   display: flex;
-  padding: 0.5rem;
+  padding: 1rem;
   align-items: center;
 }
 
@@ -103,7 +103,7 @@
   #ikona-email,
   #ikona-chat,
   #ikona-hodiny {
-    margin-left: 3rem;
+    margin-left: 1em;
   }
 }
 /* body {

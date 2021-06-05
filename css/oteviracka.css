@@ -8,7 +8,6 @@
 
 .oteviracka_obrazek {
   display: block;
-  width: calc(100% - 4rem);
   border-radius: 0.5rem;
   border: solid #ababab 0.3rem;
   margin: auto;
