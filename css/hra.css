@@ -18,6 +18,15 @@ h3 {
   line-height: 1.5;
   padding: 0 1rem 1rem 1rem;
 }
+
+@media only screen and (min-width: 900px) {
+  .game-p {
+    padding: 2rem;
+    padding-top: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+}
 .game-text {
   text-align: center;
   color: hsl(0, 0%, 90%);
@@ -32,6 +41,7 @@ h3 {
 .js-game-q5 {
   margin: 0rem 2rem;
   padding: 0.5rem;
+  padding-bottom: 1rem;
   background-color: #252729;
   border-radius: 1rem 1rem 0 0;
 }
@@ -40,6 +50,7 @@ h3 {
   margin: auto;
   margin-top: 2rem;
   width: fit-content;
+
   padding: 0.7rem;
   border-radius: 1rem;
   border: solid #eb284c;
@@ -121,6 +132,7 @@ h3 {
   margin: 0rem 2rem;
   background-color: #2b2d2e;
   border-radius: 0 0 1rem 1rem;
+  margin-bottom: 1rem;
 }
 
 /* .btn-design:checked + .btn-design::before {
@@ -173,8 +185,40 @@ h3 {
   color: hsl(349, 96%, 66%);
 }
 
-@media only screen and (min-width: 900px) {
-  .game-p {
-    padding: 0;
-  }
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 31; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }

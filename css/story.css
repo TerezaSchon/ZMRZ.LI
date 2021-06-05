@@ -7,21 +7,13 @@
   align-items: center;
 }
 
-.story_img {
-  padding: 0.5rem;
-  margin: 0 auto;
-  min-width: 20rem;
-  max-width: 48rem;
-  min-height: 100%;
-}
-
 .story_obrazek {
   display: block;
-  width: calc(100% - 4rem);
   border-radius: 0.5rem;
   border: solid #ababab 0.3rem;
   margin: auto;
   margin-bottom: 2rem;
+  padding: 0;
 }
 
 .story_text {
@@ -37,8 +29,6 @@
   width: 100%;
 }
 
-@media only screen and (min-width: 900px) {
-  .story_text {
-    margin: 1rem 2rem;
-  }
-}
+/* @media only screen and (min-width: 900px) {
+
+} */
