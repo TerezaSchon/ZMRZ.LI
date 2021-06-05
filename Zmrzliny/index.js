@@ -13,7 +13,7 @@ datumElm.innerHTML = `${den}. ${mesic}. ${rok} tu máme`;
 export const Aktualne = () => {
   const dnesZmrzli = zmrzliny.map((item) => {
     if (denVTydnu === 6 || denVTydnu === 0) {
-      datumElm.innerHTML = `<h3>O víkendu máme zavřeno, jdi na pivo a vyhlížej pondělí :)</h3>`;
+      datumElm.innerHTML = `<p class="jeVikend">O víkendu máme zavřeno, jdi na pivo a vyhlížej pondělí!</p>`;
     } else {
       return (aktualneElm.innerHTML += `<div class="dnesniZmrzli"><li class="dostupne_${item.naCepu}" style="background-color: ${item.backgroundColor}; color: ${item.color}";>${item.name}</li></div>`);
     }

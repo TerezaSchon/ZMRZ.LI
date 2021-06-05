@@ -2,7 +2,6 @@
   margin: 0 auto;
   min-width: 20rem;
   max-width: 48rem;
-  min-height: 100%;
 }
 
 h3.datum {
@@ -25,6 +24,10 @@ h3.datum {
 
 .dostupne_ne {
   display: none;
+}
+
+p.jeVikend {
+  font-size: 1.5rem;
 }
 
 /* .zavreno {

@@ -10,7 +10,11 @@
 }
 
 .logo-uvod {
-  width: 75%;
+  width: 85%;
+}
+
+h2.claim {
+  padding: 0;
 }
 
 .btn-na-cepu {
@@ -20,6 +24,12 @@
   text-transform: uppercase;
   border-radius: 1rem;
   padding: 1.5rem;
-  margin: 1.5rem;
   font-size: 1.5rem;
+}
+
+.btn-na-cepu:hover {
+  border: none;
+  background: #eb284c;
+  transition: 0.3s;
+  transform: scale(1.1);
 }

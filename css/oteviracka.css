@@ -1,5 +1,5 @@
 .oteviracka_img {
-  padding: 0.5rem;
+  padding: 0rem;
   margin: 0 auto;
   min-width: 20rem;
   max-width: 48rem;
@@ -15,12 +15,19 @@
   margin-bottom: 2rem;
 }
 
-.container_tabulka {
-  padding: 1rem;
-  align-items: center;
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 1rem;
 }
 
-.box1 {
+.sloupec {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* .box1 {
   display: block;
   align-items: center;
   width: 100%;
@@ -38,10 +45,6 @@
   flex-direction: column;
   width: calc(100% - 5px);
   align-self: center;
-}
-
-.sloupec {
-  font-size: 2rem;
 }
 
 .oteviracka p {

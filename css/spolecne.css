@@ -16,23 +16,26 @@ body {
   background-color: #252729;
   color: white;
   font-family: 'Montserrat';
-  font-size: 1.2rem;
-  letter-spacing: 1px;
 }
 
 h2 {
-  font-size: 2rem;
-  padding-bottom: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-bottom: 1rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
+p {
+  font-size: 1rem;
+}
 .sekce_spolecne {
   background-color: rgb(26, 26, 26);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   margin: 0 auto;
   width: 100vw;
 }
