@@ -36,18 +36,19 @@ h3 {
   border-radius: 1rem 1rem 0 0;
 }
 
-.game-nabidka {
+.game-kontakty {
   margin: auto;
   margin-top: 2rem;
   width: fit-content;
-  color: hsl(0, 0%, 90%);
   padding: 0.7rem;
   border-radius: 1rem;
-  border: hsl(0, 0%, 90%) 1px solid;
+  border: solid #eb284c;
 }
-
+.item {
+  color: #eb284c;
+}
 .item:hover {
-  color: hsl(349, 96%, 66%);
+  color: hsl(0, 0%, 90%);
 }
 .game-answer {
   text-align: center;
@@ -170,4 +171,42 @@ h3 {
 }
 .one {
   color: hsl(349, 96%, 66%);
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 31; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }

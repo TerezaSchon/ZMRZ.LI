@@ -27,7 +27,7 @@ btnForwardEl.addEventListener('click', () => {
     showAnswer(icecreamResult);
     hideEl(document.querySelector('.indicator'));
     hideEl(document.querySelector('.game-p'));
-    showEl(document.querySelector('.game-nabidka'));
+    showEl(document.querySelector('.game-kontakty'));
   }
 });
 
@@ -130,9 +130,22 @@ function changeQuestion(from, to) {
     setCurrentQuestion(to);
     setQestionIndicator(to);
   } else {
-    alert('zaškrtni položku');
+    const modalEl = document.getElementById('myModal');
+    modalEl.style.display = 'block';
   }
 }
+const modalCloseEl = document.getElementsByClassName('close')[0];
+modalCloseEl.addEventListener('click', () => {
+  const modalEl = document.getElementById('myModal');
+  modalEl.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+  const modalEl = document.getElementById('myModal');
+  if (event.target == modalEl) {
+    modalEl.style.display = 'none';
+  }
+});
 
 function getAllAnswers() {
   const checkedAnsItems = checkedItemsFilter(
