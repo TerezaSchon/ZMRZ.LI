@@ -14,7 +14,8 @@
 }
 
 h2.claim {
-  padding: 0;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .btn-na-cepu {
@@ -25,6 +26,7 @@ h2.claim {
   border-radius: 1rem;
   padding: 1.5rem;
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .btn-na-cepu:hover {
@@ -32,4 +34,10 @@ h2.claim {
   background: #eb284c;
   transition: 0.3s;
   transform: scale(1.1);
+}
+
+@media only screen and (min-width: 900px) {
+  .btn-na-cepu {
+    margin: 2rem;
+  }
 }

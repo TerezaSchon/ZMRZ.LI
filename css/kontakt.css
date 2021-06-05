@@ -38,14 +38,14 @@
 #ikona-hodiny {
   width: 2rem;
   font-weight: bolder;
-
   filter: invert(100%);
   align-content: center;
+  margin-left: 1rem;
 }
 
 .ikona {
   display: flex;
-  padding: 1rem;
+  padding: 0.5rem;
   align-items: center;
 }
 
@@ -92,10 +92,20 @@
   text-decoration: underline;
 }
 
-.p {
-  margin: 0rem 1rem;
+.kontakty p {
+  padding: 0 1rem 0 1rem;
 }
 
+@media only screen and (min-width: 900px) {
+  #ikona-mapa,
+  #ikona-spendlik,
+  #ikona-telefon,
+  #ikona-email,
+  #ikona-chat,
+  #ikona-hodiny {
+    margin-left: 3rem;
+  }
+}
 /* body {
     /*   font-family:  
       background-color: 

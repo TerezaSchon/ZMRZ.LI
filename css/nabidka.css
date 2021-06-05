@@ -5,7 +5,7 @@
 }
 
 h3.datum {
-  padding-top: 0;
+  padding-bottom: 1rem;
 }
 
 .dostupne_ano {
@@ -24,10 +24,6 @@ h3.datum {
 
 .dostupne_ne {
   display: none;
-}
-
-p.jeVikend {
-  font-size: 1.5rem;
 }
 
 /* .zavreno {

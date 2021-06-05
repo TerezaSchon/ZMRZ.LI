@@ -1,4 +1,4 @@
-.oteviracka_img {
+.oteviracka {
   padding: 0rem;
   margin: 0 auto;
   min-width: 20rem;
@@ -12,7 +12,6 @@
   border-radius: 0.5rem;
   border: solid #ababab 0.3rem;
   margin: auto;
-  margin-bottom: 2rem;
 }
 
 .box {
@@ -25,6 +24,18 @@
 .sloupec {
   font-size: 1.5rem;
   text-align: center;
+  padding: 2rem 0;
+}
+
+@media only screen and (min-width: 900px) {
+
+  .oteviracka_obrazek {
+    margin-bottom: 0rem;
+  }
+
+  .sloupec {
+    padding: 6rem 0;
+  }
 }
 
 /* .box1 {

@@ -1,4 +1,6 @@
 .story {
+  min-width: 20rem;
+  max-width: 48rem;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -33,4 +35,10 @@
 .story .pozadi__sipky {
   display: inline-block;
   width: 100%;
+}
+
+@media only screen and (min-width: 900px) {
+  .story_text {
+    margin: 1rem 2rem;
+  }
 }
