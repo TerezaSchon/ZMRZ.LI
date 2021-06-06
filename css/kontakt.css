@@ -87,7 +87,8 @@
 .kontakt__telefon--text,
 .kontakt__mail--text,
 .kontakt__fb--text,
-.kontakt__oteviracka--text {
+.kontakt__oteviracka--text,
+.facebook__oteviracka--text {
   color: #fc5372;
   text-decoration: underline;
 }
