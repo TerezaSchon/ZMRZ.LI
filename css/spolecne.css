@@ -57,7 +57,7 @@ p {
   background-size: auto 100%;
 }
 
-@media only screen and (min-width: 56.25rem) {
+@media only screen and (min-width: 900px) {
   .sekce_spolecne {
     max-width: 48rem;
   }
