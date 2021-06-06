@@ -8,6 +8,14 @@
   padding-bottom: 2rem;
 }
 
+.story_img {
+  padding: 0.5rem;
+  margin: 0 auto;
+  min-width: 20rem;
+  max-width: 48rem;
+  min-height: 100%;
+}
+
 .story_obrazek {
   display: block;
   border-radius: 0.5rem;
