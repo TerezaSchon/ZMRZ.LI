@@ -25,7 +25,7 @@
   padding: 2rem 0;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 56.25rem) {
 
   .oteviracka_obrazek {
     margin-bottom: 0rem;
