@@ -127,7 +127,7 @@ export const zmrzliny = [
   },
   {
     id: '16',
-    name: 'meruňka – červený rooibos',
+    name: 'Meruňka – červený rooibos',
     backgroundColor: '#FF9967',
     color: '#1B1A1A',
     naCepu: 'ne',
