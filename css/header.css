@@ -91,13 +91,16 @@ a {
 .menu ul {
   padding: 0;
   letter-spacing: 0.1rem;
-  overflow-y: scroll;
-  overflow-x: visible;
+  overflow: auto;
   transition: left 3s;
 }
 
 .menu ul li {
   list-style-type: none;
+}
+
+.item li {
+  color: #ddd;
 }
 
 .menu ul a {
@@ -107,16 +110,20 @@ a {
   padding: 0.5rem;
 }
 
-.menu-opened a:hover {
+/* .menu-opened a:hover {
   color: #eb284c;
-}
+} */
 
-.menu li {
+.menu li .item {
   position: relative;
   color: #ddd;
   font-size: 1.5rem;
   text-transform: uppercase;
   text-align: center;
+}
+
+li .item:hover {
+  color: #eb284c;
 }
 
 .menu__btn1 {
